@@ -1,8 +1,8 @@
 package com.teamgamma.promlyapp;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.res.ResourcesCompat;
 
+import android.app.ActivityOptions;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.LinearGradient;
@@ -24,6 +24,7 @@ public class CodeAgreementScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.code_agreement);
+
         iAgreeButton = findViewById(R.id.iAgreeButton);
         iAgreeButton.setAlpha((float)0.4);
         iAgreeButton.setEnabled(false);
@@ -44,6 +45,7 @@ public class CodeAgreementScreen extends AppCompatActivity {
             public void onClick(View view) {
                 Intent segueToLoginScreen = new Intent(view.getContext(), LoginScreen.class);
                 startActivity(segueToLoginScreen);
+                overridePendingTransition(R.anim.right_in, R.anim.left_out);
             }
 
         });

@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent segueToRespectCodeScreen = new Intent(view.getContext(), CodeAgreementScreen.class);
                 startActivity(segueToRespectCodeScreen);
+
             }
 
         });
