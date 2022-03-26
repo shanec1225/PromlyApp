@@ -17,8 +17,8 @@ public class MainActivity extends AppCompatActivity {
         Button next = findViewById(R.id.button1);
         next.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                Intent myIntent = new Intent(view.getContext(), CodeAgreementScreen.class);
-                startActivity(myIntent);
+                Intent segueToRespectCodeScreen = new Intent(view.getContext(), CodeAgreementScreen.class);
+                startActivity(segueToRespectCodeScreen);
             }
 
         });

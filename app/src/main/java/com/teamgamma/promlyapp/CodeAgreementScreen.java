@@ -3,6 +3,7 @@ package com.teamgamma.promlyapp;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.res.ResourcesCompat;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.LinearGradient;
 import android.graphics.Shader;
@@ -25,6 +26,7 @@ public class CodeAgreementScreen extends AppCompatActivity {
         setContentView(R.layout.code_agreement);
         iAgreeButton = findViewById(R.id.iAgreeButton);
         iAgreeButton.setAlpha((float)0.4);
+        iAgreeButton.setEnabled(false);
         ageCheckBox = findViewById(R.id.ageCheckBox);
         TextView textView = findViewById(R.id.respectCodeTitle);
 
@@ -38,6 +40,13 @@ public class CodeAgreementScreen extends AppCompatActivity {
                         Color.parseColor("#FA880C")
                 }, null, Shader.TileMode.CLAMP);
         textView.getPaint().setShader(textShader);
+        iAgreeButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent segueToLoginScreen = new Intent(view.getContext(), LoginScreen.class);
+                startActivity(segueToLoginScreen);
+            }
+
+        });
     }
 
     public void onToggleClicked(View view) {
@@ -47,9 +56,11 @@ public class CodeAgreementScreen extends AppCompatActivity {
         if (on) {
             ageCheckBox.setBackground(getResources().getDrawable(R.drawable.ic_promly_check_empty));
             iAgreeButton.setAlpha((float)0.4);
+            iAgreeButton.setEnabled(false);
         } else {
             ageCheckBox.setBackground(getResources().getDrawable(R.drawable.ic_promly_check_small));
             iAgreeButton.setAlpha((float)1.0);
+            iAgreeButton.setEnabled(true);
         }
     }
 }
