@@ -26,6 +26,12 @@
         <activity android:name=".MagicLinkScreen"
             android:exported="true">
         </activity>
+        <activity android:name=".CheckEmailPromptScreen"
+            android:exported="true">
+        </activity>
+        <activity android:name=".DiscoSplashScreen"
+            android:exported="true">
+        </activity>
     </application>
 
 </manifest>

@@ -13,6 +13,16 @@ public class MagicLinkScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.magic_link_screen);
 
+        Button sendMagicLinkButton = findViewById(R.id.sendMagicLinkButton);
+        sendMagicLinkButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent segueToCheckEmailPromptScreen = new Intent(view.getContext(), CheckEmailPromptScreen.class);
+                startActivity(segueToCheckEmailPromptScreen);
+                overridePendingTransition(R.anim.right_in, R.anim.left_out);
+            }
+
+        });
+
         Button backButton = findViewById(R.id.backToLoginScreenFromMagicLinkScreen);
         backButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {

@@ -10,4 +10,9 @@
     <string name="ageRangeText">Yes, I am between the ages of 13–19</string>
     <string name="iAgreeButtonText">I agree</string>
     <string name="respectCodeText">Respect Code</string>
+    <string name="checkEmailText1">We sent a magic link to the email <font fgcolor='#FF1696'>jen@promly.com</font></string>
+    <string name="checkEmailText2">Go to your email and tap the link to sign you in.</string>
+    <string name="resendCodeWait"><font fgcolor='#FFFFFF'>Resend code in %1$d seconds…</font></string>
+    <string name="resendLink"><font fgcolor='#AA57FF'>Resend link</font></string>
+
 </resources>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="393dp"
+        android:layout_height="60dp"
+        android:alpha="0.4"
+        android:background="@drawable/top_purple_gradient"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/backToMagicLinkScreenFromCheckEmailPromptScreen"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/ic_promly_navicon_back"
+        android:clickable="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="287dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="106dp"
+        android:layout_marginEnd="53dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/backToMagicLinkScreenFromCheckEmailPromptScreen">
+
+        <EditText
+            android:id="@+id/checkEmailText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:ems="10"
+            android:background="@null"
+            android:focusable="false"
+            android:fontFamily="@font/avenir_ltstd_black"
+            android:gravity="center|top"
+            android:inputType="textMultiLine"
+            android:lineSpacingExtra="4sp"
+            android:text="@string/checkEmailText1"
+            android:textSize="22sp"
+            tools:ignore="TextFields"
+            android:importantForAutofill="no" />
+
+        <android.widget.Space
+            android:layout_width="wrap_content"
+            android:layout_height="8dp" />
+
+        <EditText
+            android:id="@+id/checkEmailText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:clickable="false"
+            android:focusable="false"
+            android:background="@null"
+            android:ems="10"
+            android:fontFamily="@font/avenir_ltstd_book"
+            android:gravity="center|top"
+            android:lineSpacingExtra="4sp"
+            android:text="@string/checkEmailText2"
+            android:textSize="20sp"
+            tools:ignore="TextFields" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="47dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <Button
+            android:id="@+id/openMailAppButton"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Open Mail App"
+            android:textSize="17sp"
+            android:fontFamily="@font/avenir_ltstd_black"
+            android:textAllCaps="false"
+            android:background="@drawable/pink_purple_gradient_button"
+            />
+        <android.widget.Space
+            android:layout_width="wrap_content"
+            android:layout_height="8dp" />
+        <Button
+            android:id="@+id/resendLinkButton"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:textSize="17sp"
+            android:fontFamily="@font/avenir_ltstd_book"
+            android:textAllCaps="false"
+            android:background="@null"
+            />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
