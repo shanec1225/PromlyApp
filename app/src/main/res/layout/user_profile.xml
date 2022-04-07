@@ -1,0 +1,674 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="393dp"
+        android:layout_height="60dp"
+        android:alpha="0.4"
+        android:background="@drawable/top_purple_gradient"
+        android:translationZ="90dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="16dp"
+        android:translationZ="90dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_promly_navicon_elipses_circle" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/profileMultifunctionButton"
+                android:layout_width="393dp"
+                android:layout_height="393dp"
+                android:layout_marginEnd="1dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/promly_profile_temp_photo" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="24dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Arlene McGuire, 17"
+                android:layout_marginStart="16dp"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                android:fontFamily="@font/avenir_ltstd_black"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="16dp">
+
+                <TextView
+                    android:id="@+id/editProfileButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\@arlenemc"
+                    android:layout_weight="1"
+                    android:textColor="@color/promly_deep_pink"
+                    android:textSize="17sp"
+                    android:fontFamily="@font/avenir_ltstd_book"/>
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:paddingVertical="3dp"
+                    android:paddingHorizontal="14dp"
+                    android:textSize="13sp"
+                    android:textAlignment="center"
+                    android:background="@drawable/edit_profile_button"
+                    android:textColor="@color/purple_gradient_left"
+                    android:fontFamily="@font/avenir_ltstd_book"
+                    android:text="Edit" />
+
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginStart="16dp">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="16dp"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/ic_promly_school_icon" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:text="Peninsula High, 12th grade" />
+
+            </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="4dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginStart="16dp">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="16dp"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/ic_promly_location_icon" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:text="Brooklyn" />
+
+            </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="4dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginStart="16dp">
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="16dp"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/ic_promly_favorite_show_icon" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:text="Riverdale" />
+
+            </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="4dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginStart="16dp">
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="16dp"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/ic_promly_favorite_artist_icon" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:text="Olivia Rodrigo" />
+
+            </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="4dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginStart="16dp">
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="16dp"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/ic_promly_favorite_music_genre_icon" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:text="Sample" />
+
+            </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="4dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginStart="16dp">
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="16dp"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/ic_promly_favorite_movie_genre_icon" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:text="Sample" />
+
+            </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="4dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginStart="16dp">
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="16dp"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/ic_promly_dream_travel_icon" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:text="Sample" />
+
+            </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="4dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginStart="16dp">
+
+                <ImageView
+                    android:id="@+id/imageView11"
+                    android:layout_width="16dp"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/ic_promly_career_goal_icon" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:text="Sample" />
+
+            </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="32dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="vertical"
+                android:background="@drawable/pink_purple_gradient">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView12"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_promly_goal_icon" />
+                    <Space
+                        android:layout_width="12dp"
+                        android:layout_height="match_parent" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/editTextTextMultiLine"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:focusable="false"
+                            android:clickable="false"
+                            android:background="@null"
+                            android:ems="10"
+                            android:textSize="17sp"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/avenir_ltstd_book"
+                            android:gravity="start|top"
+                            android:inputType="textMultiLine"
+                            android:text="Finish the last chapter of the book I’ve been reading for the past month!"/>
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="6dp" />
+                        <TextView
+                            android:id="@+id/textView12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/avenir_ltstd_book"
+                            android:textSize="13sp"
+                            android:alpha="0.50"
+                            android:text="1By2Day" />
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="12dp"
+                        android:layout_height="match_parent" />
+
+                    <ImageView
+                        android:id="@+id/imageView13"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="12dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_promly_navicon_elipses" />
+
+
+                </LinearLayout>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/goal_reply_box">
+
+                    <EditText
+                        android:id="@+id/editTextTextPersonName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:layout_marginStart="16dp"
+                        android:alpha="0.50"
+                        android:fontFamily="@font/avenir_ltstd_book"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"
+                        android:inputType="textPersonName"
+                        android:text="nice..." />
+
+                    <ImageView
+                        android:id="@+id/imageView14"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_promly_send_icon" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="32dp" />
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="16dp">
+
+                <TextView
+                    android:id="@+id/interestTag1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="6dp"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/avenir_ltstd_black"
+                    android:textColor="@color/white"
+                    android:text="#r&amp;b"
+                    android:background="@drawable/deep_pink_rounded_tag"/>
+
+                <TextView
+                    android:id="@+id/interestTag2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="6dp"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/avenir_ltstd_black"
+                    android:textColor="@color/white"
+                    android:text="#basketball"
+                    android:background="@drawable/teal_rounded_tag"
+                    android:layout_marginStart="8dp"/>
+
+                <TextView
+                    android:id="@+id/interestTag3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="6dp"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/avenir_ltstd_black"
+                    android:textColor="@color/white"
+                    android:text="#manga"
+                    android:background="@drawable/orange_rounded_tag"
+                    android:layout_marginStart="8dp"/>
+
+                <TextView
+                    android:id="@+id/interestTag4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="6dp"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/avenir_ltstd_black"
+                    android:textColor="@color/black"
+                    android:text="#fashion"
+                    android:background="@drawable/yellow_rounded_tag"
+                    android:layout_marginStart="8dp"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginHorizontal="16dp">
+
+                <TextView
+                    android:id="@+id/interestTag5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="6dp"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/avenir_ltstd_black"
+                    android:textColor="@color/white"
+                    android:text="#coffee"
+                    android:background="@drawable/purple_rounded_tag"/>
+
+                <TextView
+                    android:id="@+id/interestTag6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="6dp"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/avenir_ltstd_black"
+                    android:textColor="@color/white"
+                    android:text="#reading"
+                    android:background="@drawable/green_rounded_tag"
+                    android:layout_marginStart="8dp"/>
+
+                <TextView
+                    android:id="@+id/editInterestsButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="6dp"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/avenir_ltstd_black"
+                    android:textColor="@color/purple_gradient_left"
+                    android:text="edit interests"
+                    android:background="@drawable/edit_interests_button"
+                    android:layout_marginStart="8dp"/>
+
+            </TableRow>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="32dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="16dp">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_gravity="start"
+                    android:textSize="22sp"
+                    android:fontFamily="@font/avenir_ltstd_black"
+                    android:text="20by20" />
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:fontFamily="@font/avenir_ltstd_black"
+                    android:text="more"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/purple_gradient_left"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="12dp" />
+
+            <androidx.gridlayout.widget.GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                app:rowCount="4"
+                app:columnCount="2">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="176dp"
+                    android:layout_height="176dp"
+                    app:cardCornerRadius="12dp"
+                    android:layout_margin="2dp">
+
+                    <ImageView
+                        android:id="@+id/imageView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:srcCompat="@tools:sample/avatars" />
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="176dp"
+                    android:layout_height="176dp"
+                    app:cardCornerRadius="12dp"
+                    android:layout_margin="2dp">
+
+                    <ImageView
+                        android:id="@+id/imageView17"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:srcCompat="@tools:sample/avatars" />
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="176dp"
+                    android:layout_height="176dp"
+                    app:cardCornerRadius="12dp"
+                    android:layout_margin="2dp">
+
+                    <ImageView
+                        android:id="@+id/imageView126"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:srcCompat="@tools:sample/avatars" />
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="176dp"
+                    android:layout_height="176dp"
+                    app:cardCornerRadius="12dp"
+                    android:layout_margin="2dp">
+
+                    <ImageView
+                        android:id="@+id/imageView19"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:srcCompat="@tools:sample/avatars" />
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="176dp"
+                    android:layout_height="176dp"
+                    app:cardCornerRadius="12dp"
+                    android:layout_margin="2dp">
+
+                    <ImageView
+                        android:id="@+id/imageView15"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:srcCompat="@tools:sample/avatars" />
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="176dp"
+                    android:layout_height="176dp"
+                    app:cardCornerRadius="12dp"
+                    android:layout_margin="2dp">
+
+                    <ImageView
+                        android:id="@+id/imageView157"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:srcCompat="@tools:sample/avatars" />
+
+                </androidx.cardview.widget.CardView>
+
+
+
+            </androidx.gridlayout.widget.GridLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
