@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".profile4">
+
+    <!--Back icon wouldn't change color unless I used this instead of Button-->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/backToProfile3Btn"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/ic_navicon"
+        android:contentDescription="@string/back_button_to_profile_3"
+        android:tint="@android:color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck,RedundantDescriptionCheck" />
+
+    <!--Gradient at the top of the page-->
+    <View
+        android:id="@+id/view2"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:alpha="0.4"
+        android:background="@drawable/top_purple_gradient"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Last Step Text-->
+    <TextView
+        android:id="@+id/LastStep"
+        android:layout_width="289dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="22dp"
+        android:fontFamily="@font/avenir_ltstd_black"
+        android:text="@string/lastStep"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <!--layout for photo-->
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LastStep"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="160dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            app:cardCornerRadius="12dip"
+            app:strokeColor="@color/white"
+            app:strokeWidth="4dp">
+
+            <ImageView
+                android:id="@+id/selectedImage"
+                android:layout_width="160dp"
+                android:layout_height="200dp"
+
+                android:adjustViewBounds="true"
+                android:background="@drawable/default_profile_image"
+                android:contentDescription="@string/profile_image"
+                android:scaleType="centerCrop" />
+
+            <!-- Check for image -->
+            <ImageView
+                android:id="@+id/imageCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:visibility="invisible"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                app:srcCompat="@drawable/ic_checkmark"
+                android:contentDescription="@string/check_mark_for_the_image" />
+
+            <ImageView
+                android:id="@+id/smile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:contentDescription="@string/smile_on_the_profile_pic_box"
+                app:srcCompat="@drawable/ic_smile"
+                tools:ignore="ImageContrastCheck" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonAddPhoto"
+            android:layout_width="135dp"
+            android:layout_height="33dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/pink_purple_gradient_button"
+            android:fontFamily="@font/avenir_ltstd_black"
+            android:minHeight="38dp"
+            android:text="@string/addPhoto"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>
+
+    <!--Let's Go button at the bottom-->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonLetsGo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/pink_purple_gradient_button"
+        android:fontFamily="@font/avenir_ltstd_black"
+        android:text="@string/letsGo"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.86" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="38dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+        <!--name layout-->
+        <LinearLayout
+            android:id="@+id/nameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/white_button"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="36dp"
+                android:layout_height="8dp"
+                android:layout_weight="1" />
+
+            <!--name input field-->
+            <EditText
+                android:id="@+id/nameInput"
+                android:layout_width="241dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/white_button"
+                android:ems="10"
+                android:fontFamily="@font/avenir_ltstd_black"
+                android:gravity="center"
+                android:hint="@string/name"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@drawable/purple_cursor"
+                android:textSize="17sp"
+                tools:ignore="TextContrastCheck" />
+
+            <!--name check-->
+            <ImageView
+                android:id="@+id/nameCheck"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="12dp"
+                android:contentDescription="@string/check_for_name_input"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_checkmark" />
+
+            <Space
+                android:layout_width="12dp"
+                android:layout_height="8dp"
+                android:layout_weight="1" />
+
+
+        </LinearLayout>
+
+        <android.widget.Space
+            android:layout_width="wrap_content"
+            android:layout_height="8dp" />
+
+        <!--username layout-->
+        <LinearLayout
+            android:id="@+id/usernameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/white_button"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="36dp"
+                android:layout_height="8dp"
+                android:layout_weight="1" />
+
+            <!--username input field-->
+            <EditText
+                android:id="@+id/usernameInput"
+                android:layout_width="241dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/white_button"
+                android:ems="10"
+                android:fontFamily="@font/avenir_ltstd_black"
+                android:gravity="center"
+                android:hint="@string/username"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                tools:ignore="TextContrastCheck" />
+
+            <!--username check-->
+            <ImageView
+                android:id="@+id/usernameCheck"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="12dp"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_checkmark"
+                android:contentDescription="@string/check_for_the_username_input" />
+
+            <Space
+                android:layout_width="12dp"
+                android:layout_height="8dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <android.widget.Space
+            android:layout_width="wrap_content"
+            android:layout_height="8dp" />
+
+        <!--birthday layout-->
+        <LinearLayout
+            android:id="@+id/birthdayLayout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/white_button"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="36dp"
+                android:layout_height="8dp"
+                android:layout_weight="1" />
+
+            <!--birthday input field-->
+            <EditText
+                android:id="@+id/birthdayInput"
+                android:layout_width="241dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/white_button"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:datePickerMode="spinner"
+                android:ems="10"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:fontFamily="@font/avenir_ltstd_black"
+                android:gravity="center"
+                android:hint="@string/birthday"
+                android:importantForAutofill="no"
+                android:inputType="date"
+                android:onClick="openDatePicker"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                tools:ignore="TextContrastCheck,UsingOnClickInXml" />
+
+            <!--birthday check-->
+            <ImageView
+                android:id="@+id/birthdayCheck"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="12dp"
+                android:contentDescription="@string/birthday_check_mark"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_checkmark" />
+
+            <Space
+                android:layout_width="12dp"
+                android:layout_height="8dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -1,0 +1,981 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="307dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="44dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022">
+
+
+        <!--Interests at the top of the screen-->
+        <TextView
+            android:id="@+id/interestsTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginEnd="44dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/avenir_ltstd_black"
+            android:text="@string/profile2_title"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="34sp" />
+
+        <Space
+            android:layout_width="173dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="11dp"
+            app:layout_constraintBottom_toTopOf="@+id/interestsDescription"
+            app:layout_constraintTop_toBottomOf="@+id/interestsTitle" />
+
+        <!--Interests description-->
+        <TextView
+            android:id="@+id/interestsDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/profile2DescriptionText"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+        <!--Purple select 5 in the Interests description-->
+        <TextView
+            android:id="@+id/select5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/select_at_least_5"
+            android:textAlignment="center"
+            android:textColor="@color/purple_200"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <!--Back icon wouldn't change color unless I used this instead of Button-->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/backToProfile1Btn"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/ic_navicon"
+        android:clickable="true"
+        android:contentDescription="@string/back_button_to_profile_1"
+        android:focusable="true"
+        android:tint="@android:color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck,RedundantDescriptionCheck" />
+
+    <!--Gradient at the top of the page-->
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:alpha="0.4"
+        android:background="@drawable/top_purple_gradient"
+        android:contentDescription="@string/gradientTop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--Next button at the bottom-->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonNext"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/pink_purple_gradient_button"
+        android:fontFamily="@font/avenir_ltstd_black"
+        android:text="@string/next"
+        android:enabled="false"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <ScrollView
+        android:id="@+id/layout"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="149dp"
+        android:fillViewport="true"
+        android:scrollbarStyle="outsideInset"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5">
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:layout_marginTop="5dip"
+            >
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="30dp"
+                app:layout_constraintBottom_toTopOf="@+id/buttonNext"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp">
+
+                    <!-- 1st square at the top -->
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/imageTop1"
+                            android:layout_width="124dp"
+                            android:layout_height="124dp"
+                            android:contentDescription="@string/top_left_image"
+                            app:srcCompat="@drawable/top_1_image" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/pillTop1"
+                            android:layout_width="45dp"
+                            android:layout_height="33dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="80dp"
+                            android:layout_marginEnd="19dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/purple_pill"
+                            android:backgroundTint="@color/promly_deep_pink"
+                            android:clickable="false"
+                            android:fontFamily="@font/avenir_ltstd_black"
+                            android:text="@string/art"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/plusTop1"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:layout_marginStart="80dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="80dp"
+                            android:background="@drawable/plus_button"
+                            android:clickable="true"
+                            android:fontFamily="@font/avenir_ltstd_black"
+                            android:textSize="20sp"
+                            android:scaleType="fitCenter"
+                            android:text="@string/plus"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:focusable="true" />
+                    </FrameLayout>
+
+                    <Space
+                        android:layout_width="16dp"
+                        android:layout_height="wrap_content" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/imageTop2"
+                            android:layout_width="124dp"
+                            android:layout_height="124dp"
+                            android:contentDescription="@string/top_left_image"
+                            app:srcCompat="@drawable/top_2_image" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/pillTop2"
+                            android:layout_width="97dp"
+                            android:layout_height="33dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="80dp"
+                            android:layout_marginEnd="19dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/purple_pill"
+                            android:backgroundTint="@color/purple_gradient_left"
+                            android:clickable="false"
+                            android:fontFamily="@font/avenir_ltstd_black"
+                            android:text="@string/adventure"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/plusTop2"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:layout_marginStart="80dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="80dp"
+                            android:background="@drawable/plus_button"
+                            android:clickable="true"
+                            android:fontFamily="@font/avenir_ltstd_black"
+                            android:textSize="20sp"
+                            android:scaleType="fitCenter"
+                            android:text="@string/plus"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            tools:ignore="TouchTargetSizeCheck"
+                            android:focusable="true" />
+                    </FrameLayout>
+
+                    <Space
+                        android:layout_width="16dp"
+                        android:layout_height="wrap_content" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/imageTop3"
+                            android:layout_width="124dp"
+                            android:layout_height="124dp"
+                            android:contentDescription="@string/top_left_image"
+                            app:srcCompat="@drawable/top_3_image" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/pillTop3"
+                            android:layout_width="87dp"
+                            android:layout_height="33dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="80dp"
+                            android:layout_marginEnd="19dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/purple_pill"
+                            android:backgroundTint="@color/skye_blue_pill"
+                            android:clickable="false"
+                            android:fontFamily="@font/avenir_ltstd_black"
+                            android:text="@string/category"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/plusTop3"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:layout_marginStart="80dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="80dp"
+                            android:background="@drawable/plus_button"
+                            android:clickable="true"
+                            android:fontFamily="@font/avenir_ltstd_black"
+                            android:textSize="20sp"
+                            android:scaleType="fitCenter"
+                            android:text="@string/plus"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:focusable="true" />
+                    </FrameLayout>
+
+                    <Space
+                        android:layout_width="16dp"
+                        android:layout_height="wrap_content" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/imageTop4"
+                            android:layout_width="124dp"
+                            android:layout_height="124dp"
+                            android:contentDescription="@string/top_left_image"
+                            app:srcCompat="@drawable/bottom_2_image" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/pillTop4"
+                            android:layout_width="87dp"
+                            android:layout_height="33dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="80dp"
+                            android:layout_marginEnd="19dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/purple_pill"
+                            android:backgroundTint="@color/coral_red_pill"
+                            android:clickable="false"
+                            android:fontFamily="@font/avenir_ltstd_black"
+                            android:text="@string/category"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/plusTop4"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:layout_marginStart="80dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="80dp"
+                            android:background="@drawable/plus_button"
+                            android:clickable="true"
+                            android:fontFamily="@font/avenir_ltstd_black"
+                            android:textSize="20sp"
+                            android:scaleType="fitCenter"
+                            android:text="@string/plus"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:focusable="true" />
+                    </FrameLayout>
+
+                    <Space
+                        android:layout_width="16dp"
+                        android:layout_height="wrap_content" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/imageTop5"
+                            android:layout_width="124dp"
+                            android:layout_height="124dp"
+                            android:contentDescription="@string/top_left_image"
+                            app:srcCompat="@drawable/bottom_1_image" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/pillTop5"
+                            android:layout_width="87dp"
+                            android:layout_height="33dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="80dp"
+                            android:layout_marginEnd="19dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/purple_pill"
+                            android:backgroundTint="@color/lime_pill"
+                            android:clickable="false"
+                            android:fontFamily="@font/avenir_ltstd_black"
+                            android:text="@string/category"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/plusTop5"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:layout_marginStart="80dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="80dp"
+                            android:background="@drawable/plus_button"
+                            android:clickable="true"
+                            android:fontFamily="@font/avenir_ltstd_black"
+                            android:textSize="20sp"
+                            android:scaleType="fitCenter"
+                            android:text="@string/plus"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:focusable="true" />
+                    </FrameLayout>
+
+                    <Space
+                        android:layout_width="16dp"
+                        android:layout_height="wrap_content" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/imageTop6"
+                            android:layout_width="124dp"
+                            android:layout_height="124dp"
+                            android:contentDescription="@string/top_left_image"
+                            app:srcCompat="@drawable/bottom_3_image" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/pillTop6"
+                            android:layout_width="87dp"
+                            android:layout_height="33dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="80dp"
+                            android:layout_marginEnd="19dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/purple_pill"
+                            android:backgroundTint="@color/lemon_pill"
+                            android:clickable="false"
+                            android:fontFamily="@font/avenir_ltstd_black"
+                            android:text="@string/category"
+                            android:textAllCaps="false"
+                            android:textColor="@color/dark_purple_textcolor"
+                            android:textSize="15sp" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/plusTop6"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:layout_marginStart="80dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="80dp"
+                            android:background="@drawable/plus_button"
+                            android:clickable="true"
+                            android:fontFamily="@font/avenir_ltstd_black"
+                            android:textSize="20sp"
+                            android:scaleType="fitCenter"
+                            android:text="@string/plus"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:focusable="true" />
+                    </FrameLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="16dp">
+
+                    <!-- 1st square at the center -->
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/imageCenter1"
+                            android:layout_width="124dp"
+                            android:layout_height="124dp"
+                            android:contentDescription="@string/top_left_image"
+                            app:srcCompat="@drawable/center_1_image" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/pillCenter1"
+                            android:layout_width="87dp"
+                            android:layout_height="33dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="80dp"
+                            android:layout_marginEnd="19dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/purple_pill"
+                            android:backgroundTint="@color/lime_pill"
+                            android:clickable="false"
+                            android:fontFamily="@font/avenir_ltstd_black"
+                            android:text="@string/category"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/plusCenter1"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:layout_marginStart="80dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="80dp"
+                            android:background="@drawable/plus_button"
+                            android:clickable="true"
+                            android:fontFamily="@font/avenir_ltstd_black"
+                            android:textSize="20sp"
+                            android:scaleType="fitCenter"
+                            android:text="@string/plus"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:focusable="true" />
+                    </FrameLayout>
+
+                    <Space
+                        android:layout_width="16dp"
+                        android:layout_height="wrap_content" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/imageCenter2"
+                            android:layout_width="124dp"
+                            android:layout_height="124dp"
+                            android:contentDescription="@string/top_left_image"
+                            app:srcCompat="@drawable/center_2_image" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/pillCenter2"
+                            android:layout_width="87dp"
+                            android:layout_height="33dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="80dp"
+                            android:layout_marginEnd="19dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/purple_pill"
+                            android:backgroundTint="@color/lemon_pill"
+                            android:clickable="false"
+                            android:fontFamily="@font/avenir_ltstd_black"
+                            android:text="@string/category"
+                            android:textAllCaps="false"
+                            android:textColor="@color/dark_purple_textcolor"
+                            android:textSize="15sp" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/plusCenter2"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:layout_marginStart="80dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="80dp"
+                            android:background="@drawable/plus_button"
+                            android:clickable="true"
+                            android:fontFamily="@font/avenir_ltstd_black"
+                            android:textSize="20sp"
+                            android:scaleType="fitCenter"
+                            android:text="@string/plus"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:focusable="true" />
+                    </FrameLayout>
+
+                    <Space
+                        android:layout_width="16dp"
+                        android:layout_height="wrap_content" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/imageCenter3"
+                            android:layout_width="124dp"
+                            android:layout_height="124dp"
+                            android:contentDescription="@string/top_left_image"
+                            app:srcCompat="@drawable/center_3_image" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/pillCenter3"
+                            android:layout_width="87dp"
+                            android:layout_height="33dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="80dp"
+                            android:layout_marginEnd="19dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/purple_pill"
+                            android:backgroundTint="@color/tangerine_pill"
+                            android:clickable="false"
+                            android:fontFamily="@font/avenir_ltstd_black"
+                            android:text="@string/category"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/plusCenter3"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:layout_marginStart="80dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="80dp"
+                            android:background="@drawable/plus_button"
+                            android:clickable="true"
+                            android:fontFamily="@font/avenir_ltstd_black"
+                            android:textSize="20sp"
+                            android:scaleType="fitCenter"
+                            android:text="@string/plus"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:focusable="true" />
+                    </FrameLayout>
+
+                    <Space
+                        android:layout_width="16dp"
+                        android:layout_height="wrap_content" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/imageCenter4"
+                            android:layout_width="124dp"
+                            android:layout_height="124dp"
+                            android:contentDescription="@string/top_left_image"
+                            app:srcCompat="@drawable/top_1_image" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/pillCenter4"
+                            android:layout_width="87dp"
+                            android:layout_height="33dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="80dp"
+                            android:layout_marginEnd="19dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/purple_pill"
+                            android:backgroundTint="#FF1696"
+                            android:clickable="false"
+                            android:fontFamily="@font/avenir_ltstd_black"
+                            android:text="@string/category"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/plusCenter4"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:layout_marginStart="80dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="80dp"
+                            android:background="@drawable/plus_button"
+                            android:clickable="true"
+                            android:fontFamily="@font/avenir_ltstd_black"
+                            android:textSize="20sp"
+                            android:scaleType="fitCenter"
+                            android:text="@string/plus"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:focusable="true" />
+                    </FrameLayout>
+
+                    <Space
+                        android:layout_width="16dp"
+                        android:layout_height="wrap_content" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/imageCenter5"
+                            android:layout_width="124dp"
+                            android:layout_height="124dp"
+                            android:contentDescription="@string/top_left_image"
+                            app:srcCompat="@drawable/top_2_image" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/pillCenter5"
+                            android:layout_width="87dp"
+                            android:layout_height="33dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="80dp"
+                            android:layout_marginEnd="19dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/purple_pill"
+                            android:backgroundTint="@color/dark_blue_pill"
+                            android:clickable="false"
+                            android:fontFamily="@font/avenir_ltstd_black"
+                            android:text="@string/category"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/plusCenter5"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:layout_marginStart="80dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="80dp"
+                            android:background="@drawable/plus_button"
+                            android:clickable="true"
+                            android:fontFamily="@font/avenir_ltstd_black"
+                            android:textSize="20sp"
+                            android:scaleType="fitCenter"
+                            android:text="@string/plus"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:focusable="true" />
+                    </FrameLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp">
+
+                    <!-- 1st square at the bottom row -->
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/imageBottom1"
+                            android:layout_width="124dp"
+                            android:layout_height="124dp"
+                            android:contentDescription="@string/top_left_image"
+                            app:srcCompat="@drawable/bottom_1_image" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/pillBottom1"
+                            android:layout_width="87dp"
+                            android:layout_height="33dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="80dp"
+                            android:layout_marginEnd="19dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/purple_pill"
+                            android:backgroundTint="@color/coral_red_pill"
+                            android:clickable="false"
+                            android:fontFamily="@font/avenir_ltstd_black"
+                            android:text="@string/category"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/plusBottom1"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:layout_marginStart="80dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="80dp"
+                            android:background="@drawable/plus_button"
+                            android:clickable="true"
+                            android:fontFamily="@font/avenir_ltstd_black"
+                            android:textSize="20sp"
+                            android:scaleType="fitCenter"
+                            android:text="@string/plus"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:focusable="true" />
+                    </FrameLayout>
+
+                    <Space
+                        android:layout_width="16dp"
+                        android:layout_height="wrap_content" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/imageBottom2"
+                            android:layout_width="124dp"
+                            android:layout_height="124dp"
+                            android:contentDescription="@string/top_left_image"
+                            app:srcCompat="@drawable/bottom_2_image" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/pillBottom2"
+                            android:layout_width="87dp"
+                            android:layout_height="33dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="80dp"
+                            android:layout_marginEnd="19dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/purple_pill"
+                            android:backgroundTint="@color/promly_deep_pink"
+                            android:clickable="false"
+                            android:fontFamily="@font/avenir_ltstd_black"
+                            android:text="@string/category"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/plusBottom2"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:layout_marginStart="80dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="80dp"
+                            android:background="@drawable/plus_button"
+                            android:clickable="true"
+                            android:scaleType="fitCenter"
+                            android:text="@string/plus"
+                            android:fontFamily="@font/avenir_ltstd_black"
+                            android:textSize="20sp"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:focusable="true" />
+                    </FrameLayout>
+
+                    <Space
+                        android:layout_width="16dp"
+                        android:layout_height="wrap_content" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/imageBottom3"
+                            android:layout_width="124dp"
+                            android:layout_height="124dp"
+                            android:contentDescription="@string/top_left_image"
+                            app:srcCompat="@drawable/bottom_3_image"
+                            tools:ignore="TooManyViews" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/pillBottom3"
+                            android:layout_width="87dp"
+                            android:layout_height="33dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="80dp"
+                            android:layout_marginEnd="19dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/purple_pill"
+                            android:backgroundTint="@color/purple_gradient_left"
+                            android:clickable="false"
+                            android:fontFamily="@font/avenir_ltstd_black"
+                            android:text="@string/category"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/plusBottom3"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:layout_marginStart="80dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="80dp"
+                            android:background="@drawable/plus_button"
+                            android:clickable="true"
+                            android:scaleType="fitCenter"
+                            android:text="@string/plus"
+                            android:fontFamily="@font/avenir_ltstd_black"
+                            android:textSize="20sp"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:focusable="true" />
+                    </FrameLayout>
+
+                    <Space
+                        android:layout_width="16dp"
+                        android:layout_height="wrap_content" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/imageBottom4"
+                            android:layout_width="124dp"
+                            android:layout_height="124dp"
+                            android:contentDescription="@string/top_left_image"
+                            app:srcCompat="@drawable/center_2_image" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/pillBottom4"
+                            android:layout_width="87dp"
+                            android:layout_height="33dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="80dp"
+                            android:layout_marginEnd="19dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/purple_pill"
+                            android:backgroundTint="@color/skye_blue_pill"
+                            android:clickable="false"
+                            android:fontFamily="@font/avenir_ltstd_black"
+                            android:text="@string/category"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/plusBottom4"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:layout_marginStart="80dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="80dp"
+                            android:background="@drawable/plus_button"
+                            android:clickable="true"
+                            android:scaleType="fitCenter"
+                            android:text="@string/plus"
+                            android:fontFamily="@font/avenir_ltstd_black"
+                            android:textSize="20sp"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:focusable="true" />
+                    </FrameLayout>
+
+                    <Space
+                        android:layout_width="16dp"
+                        android:layout_height="wrap_content" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/imageBottom5"
+                            android:layout_width="124dp"
+                            android:layout_height="124dp"
+                            android:contentDescription="@string/top_left_image"
+                            app:srcCompat="@drawable/center_1_image" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/pillBottom5"
+                            android:layout_width="87dp"
+                            android:layout_height="33dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="80dp"
+                            android:layout_marginEnd="19dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/purple_pill"
+                            android:backgroundTint="@color/tangerine_pill"
+                            android:clickable="false"
+                            android:fontFamily="@font/avenir_ltstd_black"
+                            android:text="@string/category"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/plusBottom5"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:layout_marginStart="80dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="80dp"
+                            android:background="@drawable/plus_button"
+                            android:clickable="true"
+                            android:scaleType="fitCenter"
+                            android:text="@string/plus"
+                            android:fontFamily="@font/avenir_ltstd_black"
+                            android:textSize="20sp"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:focusable="true" />
+                    </FrameLayout>
+
+                </TableRow>
+
+            </TableLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
