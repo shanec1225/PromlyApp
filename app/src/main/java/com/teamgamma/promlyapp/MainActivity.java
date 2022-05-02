@@ -15,21 +15,21 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         button = (Button)findViewById(R.id.btn);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,profile2.class);
-                startActivity(intent);
-            }
+        button.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this,profile2.class);
+            startActivity(intent);
         });
 
         button = (Button)findViewById(R.id.profile4);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,profile4.class);
-                startActivity(intent);
-            }
+        button.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this,profile4.class);
+            startActivity(intent);
+        });
+
+        button = (Button)findViewById(R.id.one_by_2day);
+        button.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this,one_by_2day.class);
+            startActivity(intent);
         });
 
     }

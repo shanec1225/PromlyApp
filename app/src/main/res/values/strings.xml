@@ -13,10 +13,10 @@
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="profile2">Profile2</string>
-    <string name = "profile4">Profile4</string>
-    <string name = "imgDes1"> A blank square box with purple gradient effect</string>
-    <string name = "gradientTop"> Gradient effect the top of the device</string>
-    <string name = "name">Name</string>
+    <string name="profile4">Profile4</string>
+    <string name="imgDes1"> A blank square box with purple gradient effect</string>
+    <string name="gradientTop"> Gradient effect the top of the device</string>
+    <string name="name">Name</string>
     <string name="birthday">Birthday</string>
     <string name="letsGo">Let\'s Go</string>
     <string name="addPhoto">add a photo *</string>
@@ -46,4 +46,16 @@
     <string name="category">#category</string>
     <string name="art">#art</string>
     <string name="adventure">#adventure</string>
+    <string name="oneby2day">1 by 2 day</string>
+    <string name="_1by2day">1by2day</string>
+    <string name="completed_goal">You’ve cleared your goal for the day. Set tomorrow’s?</string>
+    <string name="type_something_1by2day">type something</string>
+    <string name="workout">workout</string>
+    <string name="eat_healthy">eat healthy</string>
+    <string name="finish_a_book">finish a book</string>
+    <string name="today">Today</string>
+    <string name="set_1by2day">set 1by2day</string>
+    <string name="set_a_bite_sized_goal">set a bite-sized goal</string>
+    <string name="pink_gradient">pink gradient</string>
+    <string name="pink_base">pink base</string>
 </resources>

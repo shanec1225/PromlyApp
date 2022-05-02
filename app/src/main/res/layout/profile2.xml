@@ -83,7 +83,7 @@
 
     <!--Gradient at the top of the page-->
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/topGradient"
         android:layout_width="0dp"
         android:layout_height="60dp"
         android:alpha="0.4"
@@ -91,7 +91,8 @@
         android:contentDescription="@string/gradientTop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        />
 
     <!--Next button at the bottom-->
     <androidx.appcompat.widget.AppCompatButton
@@ -123,7 +124,7 @@
         android:scrollbarStyle="outsideInset"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5">
+        app:layout_constraintTop_toBottomOf="@+id/topGradient">
 
         <HorizontalScrollView
             android:id="@+id/horizontalView"
