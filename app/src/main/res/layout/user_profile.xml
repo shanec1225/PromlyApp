@@ -20,7 +20,7 @@
 
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/multiFunctionButton"
         android:layout_width="32dp"
         android:layout_height="32dp"
         android:layout_marginTop="50dp"
@@ -76,7 +76,7 @@
                 android:layout_marginHorizontal="16dp">
 
                 <TextView
-                    android:id="@+id/editProfileButton"
+                    android:id="@+id/username"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="\@arlenemc"
@@ -86,7 +86,7 @@
                     android:fontFamily="@font/avenir_ltstd_book"/>
 
                 <TextView
-                    android:id="@+id/textView13"
+                    android:id="@+id/editProfileButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="0"
@@ -347,7 +347,7 @@
                         android:orientation="vertical">
 
                         <EditText
-                            android:id="@+id/editTextTextMultiLine"
+                            android:id="@+id/goalBox1"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:focusable="false"
@@ -365,7 +365,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="6dp" />
                         <TextView
-                            android:id="@+id/textView12"
+                            android:id="@+id/goalBox2"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:textColor="@color/white"
@@ -381,7 +381,7 @@
                         android:layout_height="match_parent" />
 
                     <ImageView
-                        android:id="@+id/imageView13"
+                        android:id="@+id/goalElipsesButton"
                         android:layout_width="32dp"
                         android:layout_height="32dp"
                         android:layout_marginTop="12dp"
@@ -395,6 +395,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="16dp" />
                 <LinearLayout
+                    android:id="@+id/goalResponseField"
                     android:layout_width="match_parent"
                     android:layout_height="36dp"
                     android:layout_marginStart="12dp"
