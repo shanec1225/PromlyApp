@@ -4,8 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.237" />
+        <entry key="app/src/main/res/drawable-xhdpi/pink_purple_gradient_button.xml" value="0.273" />
         <entry key="app/src/main/res/drawable/apple_signin_button.xml" value="0.26" />
         <entry key="app/src/main/res/drawable/deep_pink_rounded_tag.xml" value="0.439" />
+        <entry key="app/src/main/res/drawable/disabled_button.xml" value="0.273" />
         <entry key="app/src/main/res/drawable/divider.xml" value="0.391" />
         <entry key="app/src/main/res/drawable/edit_interests_button.xml" value="0.384" />
         <entry key="app/src/main/res/drawable/edit_profile_button.xml" value="0.384" />
@@ -24,6 +26,8 @@
         <entry key="app/src/main/res/drawable/ic_promly_logo_small.xml" value="0.1695" />
         <entry key="app/src/main/res/drawable/ic_promly_navicon_back.xml" value="0.1695" />
         <entry key="app/src/main/res/drawable/ic_promly_navicon_elipses.xml" value="0.241" />
+        <entry key="app/src/main/res/drawable/ic_promly_school_icon.xml" value="0.273" />
+        <entry key="app/src/main/res/drawable/ic_school_1.xml" value="0.273" />
         <entry key="app/src/main/res/drawable/orange_rounded_tag.xml" value="0.439" />
         <entry key="app/src/main/res/drawable/pink_purple_gradient.xml" value="0.241" />
         <entry key="app/src/main/res/drawable/pink_purple_gradient_button.xml" value="0.2375" />
@@ -39,6 +43,7 @@
         <entry key="app/src/main/res/layout/check_email_prompt_screen.xml" value="0.25" />
         <entry key="app/src/main/res/layout/code_agreement.xml" value="0.25" />
         <entry key="app/src/main/res/layout/disco_splash_screen.xml" value="0.25982905982905985" />
+        <entry key="app/src/main/res/layout/interests.xml" value="0.37606837606837606" />
         <entry key="app/src/main/res/layout/login_screen.xml" value="0.25" />
         <entry key="app/src/main/res/layout/magic_link_screen.xml" value="0.25" />
         <entry key="app/src/main/res/layout/temp.xml" value="0.5658731079101563" />

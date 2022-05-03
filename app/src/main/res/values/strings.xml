@@ -1,3 +1,59 @@
 <resources>
     <string name="app_name">PromlyApp</string>
+    <string name="temp_goal">Finish the last chapter of the book I\'ve been reading for the past month!</string>
+    <string name="oneBy2Day">1by2day</string>
+    <string name="write_something">Write something…</string>
+    <string name="interestsTitle">Interests</string>
+    <string name="interestsDescription">Promly matches you to your peers based on the things you like.
+        Select at least 5.</string>
+    <string name="title_activity_profile4">profile4</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="profile2">Profile2</string>
+    <string name = "profile4">Profile4</string>
+    <string name = "imgDes1"> A blank square box with purple gradient effect</string>
+    <string name = "gradientTop"> Gradient effect the top of the device</string>
+    <string name = "name">Name</string>
+    <string name="birthday">Birthday</string>
+    <string name="letsGo">Let\'s Go</string>
+    <string name="addPhoto">add a photo *</string>
+    <string name="lastStep">Last Step</string>
+    <string name="username">\@username</string>
+    <string name="profile_image">Profile image</string>
+    <string name="back_button_to_profile_3">Back button to profile 3</string>
+    <string name="birthday_check_mark">birthday check mark</string>
+    <string name="check_for_name_input">check for name input</string>
+    <string name="check_mark_for_the_image">Check mark for the image</string>
+    <string name="check_for_the_username_input">check for the username input</string>
+    <string name="smile_on_the_profile_pic_box">Smile on the profile pic box</string>
+    <string name="profile2_title">Interests</string>
+    <string name="back_button_to_profile_1">Back button to profile 1</string>
+    <string name="profile2DescriptionText">Promly matches you to your peers based on the things you like.</string>
+    <string name="select_at_least_5">Select at least 5.</string>
+    <string name="bottom_center_image">bottom center image</string>
+    <string name="bottom_left_image">bottom left image</string>
+    <string name="bottom_right_image">bottom right image</string>
+    <string name="middle_left_image">middle left image</string>
+    <string name="middle_center_image">middle center image</string>
+    <string name="middle_right_image">middle right image</string>
+    <string name="top_center_image">top center image</string>
+    <string name="top_left_image">top left image</string>
+    <string name="top_right_image">top right image</string>
+    <string name="plus">+</string>
+    <string name="category">#category</string>
+    <string name="art">#art</string>
+    <string name="adventure">#adventure</string>
+    <string name="investing">#investing</string>
+    <string name="stocks">#stocks</string>
+    <string name="entrepreneurship">#entrepreneurship</string>
+    <string name="save">Save</string>
+    <string name="finance">#finance</string>
+    <string name="cryptocurrency">#cryptocurrency</string>
+    <string name="economics">#economics</string>
 </resources>

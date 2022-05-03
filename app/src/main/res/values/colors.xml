@@ -9,7 +9,12 @@
     <color name="white">#FFFFFFFF</color>
     <color name="purple_gradient_left">#AA57FF</color>
     <color name="purple_gradient_left_opaque">#33AA57FF</color>
+    <color name="promly_deep_pink">#FF1696</color>
     <color name="opaque">#00000000</color>
     <color name="purple_gradient_right">#5B62FF</color>
-    <color name="promly_deep_pink">#FF1696</color>
+    <color name="light_blue">#04D4F9</color>
+    <color name="green">#0BE014</color>
+    <color name="yellow">#E5E301</color>
+    <color name="orange">#FA880C</color>
+    <color name="red">#FF0A45</color>
 </resources>

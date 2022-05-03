@@ -28,8 +28,8 @@
             <gradient
                 android:type="linear"
                 android:angle="0"
-                android:startColor="@color/disabled_purple_gradient_left"
-                android:endColor="@color/disabled_gradient_right"
+                android:startColor="@color/purple_gradient_left"
+                android:endColor="@color/purple_gradient_right"
                 />
         </shape>
     </item>

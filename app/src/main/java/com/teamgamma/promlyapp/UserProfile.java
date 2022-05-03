@@ -1,5 +1,6 @@
 package com.teamgamma.promlyapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -16,8 +17,7 @@ public class UserProfile extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.user_profile);
-        //Todo: Change image of multifunctional button
-        //Todo: Create settings pages?
+
 
         ImageView multiFunctionButton = findViewById(R.id.multiFunctionButton);
         TextView editProfile = findViewById(R.id.editProfileButton);
@@ -26,7 +26,16 @@ public class UserProfile extends AppCompatActivity {
         TextView goalText1 = findViewById(R.id.goalBox1);
         TextView goalText2 = findViewById(R.id.goalBox2);
         ImageView goalEllipses = findViewById(R.id.goalElipsesButton);
-        viewingOwnProfile = true;
+        viewingOwnProfile = false;
+
+        editInterests.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent segueToEditInterestsScreen = new Intent(view.getContext(), EditInterests.class);
+                startActivity(segueToEditInterestsScreen);
+                overridePendingTransition(R.anim.right_in, R.anim.left_out);
+            }
+
+        });
 
         multiFunctionButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
@@ -34,8 +43,8 @@ public class UserProfile extends AppCompatActivity {
                     multiFunctionButton.setImageDrawable(getResources().getDrawable(R.drawable.ic_promly_navicon_elipses_circle));
                     System.out.println("switched to viewing other profile");
                     viewingOwnProfile = true;
-                    editProfile.setVisibility(View.VISIBLE);
-                    editInterests.setVisibility(View.VISIBLE);
+                    editProfile.setVisibility(View.GONE);
+                    editInterests.setVisibility(View.GONE);
                     goalResponseField.setVisibility(View.VISIBLE);
                     goalText1.setText(R.string.temp_goal);
                     goalText1.setTextSize((float) 17);
@@ -46,9 +55,9 @@ public class UserProfile extends AppCompatActivity {
 
                 } else {
                     multiFunctionButton.setImageDrawable(getResources().getDrawable(R.drawable.ic_promly_navicon_settings));
-                    editProfile.setVisibility(View.GONE);
+                    editProfile.setVisibility(View.VISIBLE);
                     System.out.println("switched to viewing own profile");
-                    editInterests.setVisibility(View.GONE);
+                    editInterests.setVisibility(View.VISIBLE);
                     goalResponseField.setVisibility(View.GONE);
                     goalText1.setText(R.string.oneBy2Day);
                     goalText1.setTextSize((float) 13);
