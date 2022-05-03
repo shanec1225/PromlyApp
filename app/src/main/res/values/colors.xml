@@ -8,6 +8,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="purple_gradient_left">#AA57FF</color>
+    <color name="purple_gradient_left_opaque">#33AA57FF</color>
+    <color name="opaque">#00000000</color>
     <color name="purple_gradient_right">#5B62FF</color>
     <color name="promly_deep_pink">#FF1696</color>
 </resources>

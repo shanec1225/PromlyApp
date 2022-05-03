@@ -1,6 +1,3 @@
 <resources>
     <string name="app_name">PromlyApp</string>
-    <string name="temp_goal">Finish the last chapter of the book I\'ve been reading for the past month!</string>
-    <string name="oneBy2Day">1by2day</string>
-    <string name="write_something">Write something…</string>
 </resources>
