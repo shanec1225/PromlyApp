@@ -14,9 +14,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PromlyApp">
         <activity
-            android:name=".one_by_2day"
-            android:exported="false" />
-        <activity
             android:name=".profile4"
             android:exported="false" />
         <activity

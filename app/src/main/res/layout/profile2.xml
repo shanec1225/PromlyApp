@@ -20,7 +20,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.022">
 
-
         <!--Interests at the top of the screen-->
         <TextView
             android:id="@+id/interestsTitle"

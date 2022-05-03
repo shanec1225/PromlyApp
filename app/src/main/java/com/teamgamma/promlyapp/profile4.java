@@ -202,9 +202,9 @@ public class profile4 extends AppCompatActivity {
     // Using the date picker in the edit text box
     private void initDatePicker() {
         DatePickerDialog.OnDateSetListener dateSetListener = (datePicker, year, month, day) -> {
-        month = month + 1;
-        String date = makeDateString(day, month, year);
-        mBirthday.setText(date);
+            month = month + 1;
+            String date = makeDateString(day, month, year);
+            mBirthday.setText(date);
         };
         Calendar cal = Calendar.getInstance();
         year = cal.get(Calendar.YEAR);
@@ -215,7 +215,7 @@ public class profile4 extends AppCompatActivity {
     }
 
     private String makeDateString(int day, int month, int year) {
-            return getMonthFormat(month) + " " + day + ", " + year;
+        return getMonthFormat(month) + " " + day + ", " + year;
     }
 
     // Displays the month using 3 char in the scroll wheel while selecting birthday
@@ -282,10 +282,3 @@ public class profile4 extends AppCompatActivity {
 
     }
 }
-
-
-
-
-
-
-

@@ -8,9 +8,9 @@ import android.widget.Button;
 public class profile2 extends AppCompatActivity {
     Button mBack,mNext,mPlusButtonTop1,mPlusButtonTop2,mPlusButtonTop3,mPlusButtonTop4,mPlusButtonTop5,
             mPlusButtonTop6, mPlusButtonCenter1,mPlusButtonCenter2,mPlusButtonCenter3,mPlusButtonCenter4,mPlusButtonCenter5,mPlusButtonBottom1
-           ,mPlusButtonBottom2,mPlusButtonBottom3,mPlusButtonBottom4,mPlusButtonBottom5;
+            ,mPlusButtonBottom2,mPlusButtonBottom3,mPlusButtonBottom4,mPlusButtonBottom5;
     int top1=1,top2=1,top3=1,top4=1,top5=1,top6=1, interestsSelected,center1=1,center2=1,center3=1,center4=1,center5=1
-        ,bottom1=1,bottom2=1,bottom3=1,bottom4=1,bottom5=1;
+            ,bottom1=1,bottom2=1,bottom3=1,bottom4=1,bottom5=1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

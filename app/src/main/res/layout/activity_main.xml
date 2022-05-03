@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/btn"
+        android:id="@+id/profile2"
         android:layout_width="110dp"
         android:layout_height="48dp"
         android:layout_marginTop="200dp"
@@ -42,7 +42,7 @@
         android:layout_height="48dp"
         android:layout_marginStart="250dp"
         android:layout_marginTop="340dp"
-        android:text="@string/oneby2day"
+        android:text="@string/_1by2day"
         android:textColor="@android:color/background_dark"
         android:textSize="15sp"
         android:textStyle="bold"
@@ -50,6 +50,4 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -46,16 +46,19 @@
     <string name="category">#category</string>
     <string name="art">#art</string>
     <string name="adventure">#adventure</string>
-    <string name="oneby2day">1 by 2 day</string>
     <string name="_1by2day">1by2day</string>
-    <string name="completed_goal">You’ve cleared your goal for the day. Set tomorrow’s?</string>
-    <string name="type_something_1by2day">type something</string>
-    <string name="workout">workout</string>
-    <string name="eat_healthy">eat healthy</string>
-    <string name="finish_a_book">finish a book</string>
+    <string name="purple_gradient_desc">purple gradient</string>
+    <string name="pink_gradient_image_view_desc">pink gradient image view</string>
     <string name="today">Today</string>
     <string name="set_1by2day">set 1by2day</string>
     <string name="set_a_bite_sized_goal">set a bite-sized goal</string>
-    <string name="pink_gradient">pink gradient</string>
-    <string name="pink_base">pink base</string>
+    <string name="pink_check_desc">pink check</string>
+    <string name="finish_a_book">finish a book</string>
+    <string name="eat_healthy">eat healthy</string>
+    <string name="workout">workout</string>
+    <string name="type_something">type something</string>
+    <string name="you_ve_cleared_your_goal_for_the_day_set_tomorrow_s">You’ve cleared your goal for the day. Set tomorrow’s?</string>
+    <string name="expand_your_circle">Expand Your Circle</string>
+    <string name="we_got_you">We Got You</string>
+    <string name="explore">explore</string>
 </resources>

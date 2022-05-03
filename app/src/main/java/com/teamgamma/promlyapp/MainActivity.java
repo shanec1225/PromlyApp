@@ -4,8 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.widget.Button;
 import android.os.Bundle;
 import android.content.Intent;
-import android.view.View;
-import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
     public Button button;
@@ -14,21 +12,21 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        button = (Button)findViewById(R.id.btn);
+        button = findViewById(R.id.profile2);
         button.setOnClickListener(view -> {
             Intent intent = new Intent(MainActivity.this,profile2.class);
             startActivity(intent);
         });
 
-        button = (Button)findViewById(R.id.profile4);
+        button = findViewById(R.id.profile4);
         button.setOnClickListener(view -> {
             Intent intent = new Intent(MainActivity.this,profile4.class);
             startActivity(intent);
         });
 
-        button = (Button)findViewById(R.id.one_by_2day);
+        button = findViewById(R.id.one_by_2day);
         button.setOnClickListener(view -> {
-            Intent intent = new Intent(MainActivity.this,one_by_2day.class);
+            Intent intent = new Intent(MainActivity.this,OneBy2day.class);
             startActivity(intent);
         });
 
