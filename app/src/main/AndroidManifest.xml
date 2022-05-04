@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PromlyApp">
         <activity
+            android:name=".ViewGoals"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -20,9 +23,7 @@
         </activity>
         <activity
             android:name=".GoalFullscreen"
-            android:exported="true"
-            >
-        </activity>
+            android:exported="true"></activity>
     </application>
 
 </manifest>

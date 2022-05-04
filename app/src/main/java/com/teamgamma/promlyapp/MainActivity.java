@@ -15,13 +15,17 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Button next = findViewById(R.id.button3);
-        next.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                Intent segueToGoalFullscreen = new Intent(view.getContext(), GoalFullscreen.class);
-                startActivity(segueToGoalFullscreen);
-
-            }
+        next.setOnClickListener(view -> {
+            Intent segueToGoalFullscreen = new Intent(view.getContext(), GoalFullscreen.class);
+            startActivity(segueToGoalFullscreen);
 
         });
+
+        Button one = findViewById(R.id.button4);
+        one.setOnClickListener(view -> {
+            Intent toNext = new Intent(view.getContext(),ViewGoals.class);
+            startActivity(toNext);
+        });
+
     }
 }

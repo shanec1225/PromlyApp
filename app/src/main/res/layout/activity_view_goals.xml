@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:layout_editor_absoluteY="25dp">
+
+
+    <!--Gradient at the top of the page-->
+    <ImageView
+        android:id="@+id/topGradient"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:alpha="0.4"
+        android:background="@drawable/top_purple_gradient"
+        android:contentDescription="@string/gradientTop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title1by2day"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="146dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="147dp"
+        android:fontFamily="@font/avenir_ltstd_black"
+        android:gravity="center_horizontal"
+        android:text="@string/_1by2day"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="347dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="19dp"
+        android:gravity="center"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title1by2day">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:textAlignment="center">
+
+            <FrameLayout
+                android:id="@+id/goalsDone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/purple_base"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/test5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/avenir_ltstd_black"
+                        android:text="@string/you_ve_cleared_your_goal_for_the_day_set_tomorrow_s"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/typeSomething"
+                        android:layout_width="311dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="24dp"
+                        android:autofillHints="goal"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/avenir_ltstd_black"
+                        android:hint="@string/type_something"
+                        android:inputType="textMultiLine|text"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textColorHint="#80AA57FF"
+                        android:textSize="34sp"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/workout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="33dp"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="30dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/suggestion_pill"
+                            android:fontFamily="@font/avenir_ltstd_book"
+                            android:minWidth="0dp"
+                            android:minHeight="0dp"
+                            android:text="@string/workout"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/eatHealthy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="33dp"
+                            android:layout_gravity="center"
+                            android:layout_marginHorizontal="12dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/suggestion_pill"
+                            android:fontFamily="@font/avenir_ltstd_book"
+                            android:minWidth="0dp"
+                            android:minHeight="0dp"
+                            android:singleLine="true"
+                            android:text="@string/eat_healthy"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/finishBook"
+                            android:layout_width="wrap_content"
+                            android:layout_height="33dp"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="30dp"
+                            android:background="@drawable/suggestion_pill"
+                            android:fontFamily="@font/avenir_ltstd_book"
+                            android:minWidth="0dp"
+                            android:minHeight="0dp"
+                            android:padding="1dp"
+                            android:text="@string/finish_a_book"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/pink_base"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/pinkGradient"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/pink_gradient_image_view_desc"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/pink_gradient" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/pinkCheck"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="24dp"
+                        android:contentDescription="@string/pink_check_desc"
+                        android:visibility="invisible"
+                        app:srcCompat="@drawable/pink_checkmark" />
+
+                    <TextView
+                        android:id="@+id/date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/avenir_ltstd_black"
+                        android:text="@string/today"
+                        android:textAlignment="center"
+                        android:textColor="@color/promly_deep_pink"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/setGoalbtn"
+                        android:autofillHints="goal"
+                        android:layout_width="311dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="24dp"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/avenir_ltstd_black"
+                        android:hint="@string/set_a_bite_sized_goal"
+                        android:inputType="textMultiLine|text"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textColorHint="#80FFFFFF"
+                        android:textSize="34sp" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/buttonSet1By2Day"
+                        android:layout_width="181dp"
+                        android:layout_height="52dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/pink_button"
+                        android:fontFamily="@font/avenir_ltstd_book"
+                        android:text="@string/set_1by2day"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
