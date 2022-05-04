@@ -53,6 +53,9 @@
         <activity android:name=".profiles.EditInterests"
             android:exported="true">
         </activity>
+        <activity android:name=".GoalFullscreen"
+            android:exported="true">
+        </activity>
     </application>
 
 </manifest>
