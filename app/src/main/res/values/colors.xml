@@ -11,8 +11,6 @@
     <color name="purple_gradient_right">#5B62FF</color>
     <color name="disabled_purple_gradient_left">#4DAA57FF</color>
     <color name="disabled_gradient_right">#4D5B62FF</color>
-    <color name="google_signin_button_red">#FF0A45</color>
-    <color name="promly_deep_pink">#FF1696</color>
     <color name="skye_blue_pill">#04D4F9</color>
     <color name="lime_pill">#0BE014</color>
     <color name="lemon_pill">#E5E301</color>
@@ -20,4 +18,6 @@
     <color name="tangerine_pill">#FA880C</color>
     <color name="coral_red_pill">#FF0A45</color>
     <color name="dark_blue_pill">#00008b</color>
+    <color name="google_signin_button_red">#FF0A45</color>
+    <color name="promly_deep_pink">#FF1696</color>
 </resources>

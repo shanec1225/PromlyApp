@@ -5,6 +5,13 @@ import android.widget.Button;
 import android.os.Bundle;
 import android.content.Intent;
 
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+
+
 public class MainActivity extends AppCompatActivity {
     public Button button;
     @Override
@@ -24,11 +31,25 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-        button = findViewById(R.id.one_by_2day);
-        button.setOnClickListener(view -> {
-            Intent intent = new Intent(MainActivity.this,OneBy2day.class);
-            startActivity(intent);
+        button = (Button) findViewById(R.id.p1_button);
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent segueToProfile1 = new Intent(view.getContext(), profile1.class);
+                startActivity(segueToProfile1);
+
+            }
+
+        });
+        button = (Button)findViewById(R.id.p3_button);
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,profile3.class);
+                startActivity(intent);
+
+            }
+
         });
 
     }
+
 }

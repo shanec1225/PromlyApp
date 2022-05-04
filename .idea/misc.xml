@@ -3,6 +3,26 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Gaston Cohen/Desktop/Git/PromlyApp/app/src/main/res/drawable/disabled_button.xml" value="0.209" />
+        <entry key="..\:/Users/Gaston Cohen/Desktop/Git/PromlyApp/app/src/main/res/drawable/ic_check_button.xml" value="0.358" />
+        <entry key="..\:/Users/Gaston Cohen/Desktop/Git/PromlyApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.209" />
+        <entry key="..\:/Users/Gaston Cohen/Desktop/Git/PromlyApp/app/src/main/res/drawable/ic_music.xml" value="0.358" />
+        <entry key="..\:/Users/Gaston Cohen/Desktop/Git/PromlyApp/app/src/main/res/drawable/ic_navicon.xml" value="0.209" />
+        <entry key="..\:/Users/Gaston Cohen/Desktop/Git/PromlyApp/app/src/main/res/drawable/ic_profile1_checkbutton.xml" value="0.358" />
+        <entry key="..\:/Users/Gaston Cohen/Desktop/Git/PromlyApp/app/src/main/res/drawable/ic_profile1_round_button1.xml" value="0.358" />
+        <entry key="..\:/Users/Gaston Cohen/Desktop/Git/PromlyApp/app/src/main/res/drawable/ic_profile1_white_circle.xml" value="0.209" />
+        <entry key="..\:/Users/Gaston Cohen/Desktop/Git/PromlyApp/app/src/main/res/drawable/ic_profile3_round_button4.xml" value="0.358" />
+        <entry key="..\:/Users/Gaston Cohen/Desktop/Git/PromlyApp/app/src/main/res/drawable/ic_profile3_round_button7.xml" value="0.358" />
+        <entry key="..\:/Users/Gaston Cohen/Desktop/Git/PromlyApp/app/src/main/res/drawable/ic_promly_favorite_movie_genre_icon.xml" value="0.209" />
+        <entry key="..\:/Users/Gaston Cohen/Desktop/Git/PromlyApp/app/src/main/res/drawable/ic_promly_goal_icon.xml" value="0.209" />
+        <entry key="..\:/Users/Gaston Cohen/Desktop/Git/PromlyApp/app/src/main/res/drawable/purple_cursor.xml" value="0.209" />
+        <entry key="..\:/Users/Gaston Cohen/Desktop/Git/PromlyApp/app/src/main/res/layout/about_me_layour.xml" value="0.2015625" />
+        <entry key="..\:/Users/Gaston Cohen/Desktop/Git/PromlyApp/app/src/main/res/layout/activity_main.xml" value="0.2015625" />
+        <entry key="..\:/Users/Gaston Cohen/Desktop/Git/PromlyApp/app/src/main/res/layout/profile1.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/Gaston Cohen/Desktop/Git/PromlyApp/app/src/main/res/layout/profile2.xml" value="0.2015625" />
+        <entry key="..\:/Users/Gaston Cohen/Desktop/Git/PromlyApp/app/src/main/res/layout/profile3.xml" value="0.33" />
+        <entry key="..\:/Users/Gaston Cohen/Desktop/Git/PromlyApp/app/src/main/res/layout/profile4.xml" value="0.2015625" />
+        <entry key="..\:/Users/Gaston Cohen/Desktop/Git/PromlyApp/app/src/main/res/layout/user_profile.xml" value="0.2015625" />
         <entry key="..\:/Users/skowr/StudioProjects/PromlyApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2985" />
         <entry key="..\:/Users/skowr/StudioProjects/PromlyApp/app/src/main/res/drawable-xhdpi/pink_purple_gradient_button.xml" value="0.1935" />
         <entry key="..\:/Users/skowr/StudioProjects/PromlyApp/app/src/main/res/drawable-xhdpi/text_field.xml" value="0.122" />

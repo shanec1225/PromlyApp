@@ -37,12 +37,12 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/one_by_2day"
-        android:layout_width="wrap_content"
+        android:id="@+id/p3_button"
+        android:layout_width="110dp"
         android:layout_height="48dp"
         android:layout_marginStart="250dp"
-        android:layout_marginTop="340dp"
-        android:text="@string/_1by2day"
+        android:layout_marginTop="116dp"
+        android:text="profile3"
         android:textColor="@android:color/background_dark"
         android:textSize="15sp"
         android:textStyle="bold"
@@ -50,4 +50,21 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/p1_button"
+        android:layout_width="110dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="352dp"
+        android:text="profile1"
+        android:textColor="@android:color/background_dark"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
