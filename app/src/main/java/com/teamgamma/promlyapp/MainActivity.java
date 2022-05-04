@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 
 
+import com.teamgamma.promlyapp.hustle.Hustle;
 import com.teamgamma.promlyapp.onboarding.profile2;
 import com.teamgamma.promlyapp.onebytwoday.GoalFullscreen;
 import com.teamgamma.promlyapp.profiles.UserProfile;
@@ -25,7 +26,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view1) {
                 Intent segueTo1by2day = new Intent(view1.getContext(), GoalFullscreen.class);
                 startActivity(segueTo1by2day);
-                overridePendingTransition(R.anim.right_in, R.anim.left_out);
             };
         });
 
@@ -33,9 +33,8 @@ public class MainActivity extends AppCompatActivity {
         Button mHustle = findViewById(R.id.buttonHustle);
         mHustle.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view1) {
-                Intent segueToHustle = new Intent(view1.getContext(), profile2.class);
+                Intent segueToHustle = new Intent(view1.getContext(), Hustle.class);
                 startActivity(segueToHustle);
-                overridePendingTransition(R.anim.right_in, R.anim.left_out);
             };
         });
 
@@ -45,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view1) {
                 Intent segueToProfile = new Intent(view1.getContext(), UserProfile.class);
                 startActivity(segueToProfile);
-                overridePendingTransition(R.anim.right_in, R.anim.left_out);
+
             };
         });
 

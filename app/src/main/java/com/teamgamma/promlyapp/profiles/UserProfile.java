@@ -71,6 +71,7 @@ public class UserProfile extends AppCompatActivity {
                     goalText2.setText(R.string.oneBy2Day);
                     goalText2.setTextSize((float) 13);
                     goalEllipses.setVisibility(View.VISIBLE);
+                    //TODO: Implement ellipses function (report goal?)
                     viewingOwnProfile = true;
 
                 } else {

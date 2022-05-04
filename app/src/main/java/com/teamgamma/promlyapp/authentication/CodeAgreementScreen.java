@@ -20,6 +20,7 @@ public class CodeAgreementScreen extends AppCompatActivity {
 
     ToggleButton ageCheckBox;
     Button iAgreeButton;
+    Boolean on;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +32,7 @@ public class CodeAgreementScreen extends AppCompatActivity {
         iAgreeButton.setEnabled(false);
         ageCheckBox = findViewById(R.id.ageCheckBox);
         TextView textView = findViewById(R.id.respectCodeTitle);
+        on = false;
 
         TextPaint paint = textView.getPaint();
         float width = paint.measureText("Respect Code");
@@ -53,9 +55,6 @@ public class CodeAgreementScreen extends AppCompatActivity {
     }
 
     public void onToggleClicked(View view) {
-        // Is the toggle on?
-        boolean on = ((ToggleButton) view).isChecked();
-
         if (on) {
             ageCheckBox.setBackground(getResources().getDrawable(R.drawable.ic_promly_check_empty));
             iAgreeButton.setAlpha((float)0.4);

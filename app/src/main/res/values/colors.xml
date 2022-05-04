@@ -23,6 +23,6 @@
     <color name="tangerine_pill">#FA880C</color>
     <color name="coral_red_pill">#FF0A45</color>
     <color name="dark_blue_pill">#00008b</color>
-
+    <color name="transparent">#00000000</color>
     <color name="system_gray">#3A3A3C</color>
 </resources>

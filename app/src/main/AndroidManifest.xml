@@ -56,6 +56,12 @@
         <activity android:name=".onebytwoday.GoalFullscreen"
             android:exported="true">
         </activity>
+        <activity android:name=".hustle.Hustle"
+            android:exported="true">
+        </activity>
+        <activity android:name=".hustle.Serve"
+            android:exported="true">
+        </activity>
     </application>
 
 </manifest>

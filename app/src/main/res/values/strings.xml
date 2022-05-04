@@ -96,6 +96,8 @@
     <string name="avatar_on_expand_circle">avatar on expand circle</string>
     <string name="top_icon_left_side">Top icon left side</string>
     <string name="oneby2day">1 by 2 day</string>
+    <string name="oneBy2Day">1by2day</string>
+    <string name="write_something">Write something…</string>
     <string name="completed_goal">You’ve cleared your goal for the day. Set tomorrow’s?</string>
     <string name="type_something_1by2day">type something</string>
     <string name="pink_gradient">pink gradient</string>
@@ -112,4 +114,5 @@
     <string name="cryptocurrency">#cryptocurrency</string>
     <string name="economics">#economics</string>
     <string name="more">more</string>
+    <string name="temp_goal">Finish the last chapter of the book I\'ve been reading for the past month!</string>
 </resources>
