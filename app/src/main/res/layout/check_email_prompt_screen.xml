@@ -16,45 +16,34 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/backToMagicLinkScreenFromCheckEmailPromptScreen"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="50dp"
-        android:background="@drawable/ic_promly_navicon_back"
-        android:clickable="true"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="287dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="53dp"
-        android:layout_marginTop="106dp"
+        android:layout_marginTop="128dp"
         android:layout_marginEnd="53dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/backToMagicLinkScreenFromCheckEmailPromptScreen">
+        app:layout_constraintTop_toBottomOf="@+id/view2">
 
         <EditText
             android:id="@+id/checkEmailText1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@null"
             android:clickable="false"
             android:ems="10"
-            android:background="@null"
             android:focusable="false"
             android:fontFamily="@font/avenir_ltstd_black"
             android:gravity="center|top"
+            android:importantForAutofill="no"
             android:inputType="textMultiLine"
             android:lineSpacingExtra="4sp"
             android:text="@string/checkEmailText1"
             android:textSize="22sp"
-            tools:ignore="TextFields"
-            android:importantForAutofill="no" />
+            tools:ignore="TextFields" />
 
         <android.widget.Space
             android:layout_width="wrap_content"
@@ -64,13 +53,13 @@
             android:id="@+id/checkEmailText2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textMultiLine"
-            android:clickable="false"
-            android:focusable="false"
             android:background="@null"
+            android:clickable="false"
             android:ems="10"
+            android:focusable="false"
             android:fontFamily="@font/avenir_ltstd_book"
             android:gravity="center|top"
+            android:inputType="textMultiLine"
             android:lineSpacingExtra="4sp"
             android:text="@string/checkEmailText2"
             android:textSize="20sp"
@@ -102,15 +91,16 @@
         <android.widget.Space
             android:layout_width="wrap_content"
             android:layout_height="8dp" />
+
         <Button
             android:id="@+id/resendLinkButton"
             android:layout_width="match_parent"
             android:layout_height="48dp"
-            android:textSize="17sp"
+            android:background="@null"
             android:fontFamily="@font/avenir_ltstd_book"
             android:textAllCaps="false"
-            android:background="@null"
-            />
+            android:textSize="17sp"
+            tools:ignore="SpeakableTextPresentCheck" />
 
     </LinearLayout>
 

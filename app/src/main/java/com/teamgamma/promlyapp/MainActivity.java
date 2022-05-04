@@ -17,8 +17,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Objects.requireNonNull(getSupportActionBar()).hide();
-
         Button m1by2day = findViewById(R.id.button1By2Day);
         m1by2day.setOnClickListener(view -> {
             // Switch MainActivity.class with 1by2day class so that when it is pressed it goes to 1by2day
@@ -33,16 +31,6 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-
-        Button next = findViewById(R.id.button1);
-        next.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                Intent segueToRespectCodeScreen = new Intent(view.getContext(), CodeAgreementScreen.class);
-                startActivity(segueToRespectCodeScreen);
-
-            }
-
-        });
     }
 
 }

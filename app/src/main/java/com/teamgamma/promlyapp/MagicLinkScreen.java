@@ -23,14 +23,5 @@ public class MagicLinkScreen extends AppCompatActivity {
 
         });
 
-        Button backButton = findViewById(R.id.backToLoginScreenFromMagicLinkScreen);
-        backButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                Intent segueBackToLoginScreen = new Intent(view.getContext(), LoginScreen.class);
-                startActivity(segueBackToLoginScreen);
-                overridePendingTransition(R.anim.left_in, R.anim.right_out);
-            }
-
-        });
     }
 }

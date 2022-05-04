@@ -25,12 +25,13 @@ public class CheckEmailPromptScreen extends AppCompatActivity {
         resendLinkButton.setEnabled(false);
         resendLinkButton.setText(getString(R.string.resendCodeWait));
 
-        Button backButton = findViewById(R.id.backToMagicLinkScreenFromCheckEmailPromptScreen);
-        backButton.setOnClickListener(new View.OnClickListener() {
+        //TODO: open mail app, not segue to disco ball
+        Button openEmailButton = findViewById(R.id.openMailAppButton);
+        openEmailButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                Intent segueBackToMagicLinkScreen = new Intent(view.getContext(), MagicLinkScreen.class);
-                startActivity(segueBackToMagicLinkScreen);
-                overridePendingTransition(R.anim.left_in, R.anim.right_out);
+                Intent segueToDiscoBall = new Intent(view.getContext(), DiscoSplashScreen.class);
+                startActivity(segueToDiscoBall);
+                overridePendingTransition(R.anim.right_in, R.anim.left_out);
             }
 
         });
