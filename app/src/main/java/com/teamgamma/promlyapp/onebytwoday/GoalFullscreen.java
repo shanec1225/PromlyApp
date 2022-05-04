@@ -1,4 +1,4 @@
-package com.teamgamma.promlyapp;
+package com.teamgamma.promlyapp.onebytwoday;
 
 import android.os.Bundle;
 import android.view.View;
@@ -9,6 +9,8 @@ import android.widget.TextView;
 import android.widget.ToggleButton;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.teamgamma.promlyapp.R;
 
 public class GoalFullscreen extends AppCompatActivity {
 
