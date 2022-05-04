@@ -95,4 +95,14 @@
     <string name="middle_avatar_on_expand_circle">middle avatar on expand circle</string>
     <string name="avatar_on_expand_circle">avatar on expand circle</string>
     <string name="top_icon_left_side">Top icon left side</string>
+    <string name="temp_goal">Finish the last chapter of the book I\'ve been reading for the past month!</string>
+    <string name="oneBy2Day">1by2day</string>
+    <string name="write_something">Write something…</string>
+    <string name="investing">#investing</string>
+    <string name="stocks">#stocks</string>
+    <string name="entrepreneurship">#entrepreneurship</string>
+    <string name="save">Save</string>
+    <string name="finance">#finance</string>
+    <string name="cryptocurrency">#cryptocurrency</string>
+    <string name="economics">#economics</string>
 </resources>
