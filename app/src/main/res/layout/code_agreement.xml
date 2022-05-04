@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="114dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="139dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="139dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_promly_logo_small"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/respectCodeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="70dp"
+        android:fontFamily="@font/avenir_ltstd_black"
+        android:text="@string/respectCodeText"
+        android:focusable="false"
+        android:clickable="false"
+        android:textColor="@color/promly_deep_pink"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="393dp"
+        android:layout_height="60dp"
+        android:alpha="0.4"
+        android:background="@drawable/top_purple_gradient"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine3"
+        android:layout_width="287dp"
+        android:layout_height="336dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="53dp"
+        android:ems="10"
+        android:fontFamily="@font/avenir_ltstd_book"
+        android:inputType="textMultiLine"
+        android:lineSpacingExtra="6.5dp"
+        android:text="@string/respect_code_agreement"
+        android:textAlignment="center"
+        android:focusable="false"
+        android:clickable="false"
+        android:background="@null"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/respectCodeTitle"
+        android:importantForAutofill="no"
+        tools:ignore="LabelFor" />
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="47dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine3">
+
+        <Button
+            android:id="@+id/iAgreeButton"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:background="@drawable/pink_purple_gradient_button"
+            android:fontFamily="@font/avenir_ltstd_black"
+            android:text="@string/iAgreeButtonText"
+            android:textAllCaps="false"
+            android:textSize="17sp" />
+
+        <android.widget.Space
+            android:layout_width="wrap_content"
+            android:layout_height="12dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/ageCheckBox"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:text="off"
+                android:textSize="0sp"
+                android:onClick="onToggleClicked"
+                android:background="@drawable/ic_promly_check_empty"
+                tools:ignore="HardcodedText,UsingOnClickInXml" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/avenir_ltstd_book"
+                android:text="@string/ageRangeText"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <android.widget.Space
+            android:layout_width="wrap_content"
+            android:layout_height="12dp" />
+
+        <EditText
+            android:id="@+id/editTextTextMultiLine4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="@font/avenir_ltstd_book"
+            android:background="@null"
+            android:inputType="textMultiLine"
+            android:text="@string/by_signing_up_agreement"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:importantForAutofill="no"
+            tools:ignore="LabelFor" />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.widget.Button;
 
 import java.util.Objects;
+import android.view.View;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -31,5 +33,16 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
+
+        Button next = findViewById(R.id.button1);
+        next.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent segueToRespectCodeScreen = new Intent(view.getContext(), CodeAgreementScreen.class);
+                startActivity(segueToRespectCodeScreen);
+
+            }
+
+        });
     }
+
 }

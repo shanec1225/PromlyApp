@@ -1,5 +1,20 @@
 <resources>
     <string name="app_name">PromlyApp</string>
+    <string name="respect_code_agreement">Welcome to Promly!
+
+        <br/>\n\nPlease remember to be respectful of your fellow users. This platform is designed to empower teens- Created for GenZ by GenZ.
+
+        <br/>\n\nWe hope this app fosters more genuine connections and allows people to share their authentic selves!
+    </string>
+    <string name="by_signing_up_agreement">By signing up, you agree to the <font fgcolor='#AA57FF'>terms and conditions</font> and <font fgcolor='#AA57FF'>privacy policy</font>.</string>
+    <string name="ageRangeText">Yes, I am between the ages of 13–19</string>
+    <string name="iAgreeButtonText">I agree</string>
+    <string name="respectCodeText">Respect Code</string>
+    <string name="checkEmailText1">We sent a magic link to the email <font fgcolor='#FF1696'>jen@promly.com</font></string>
+    <string name="checkEmailText2">Go to your email and tap the link to sign you in.</string>
+    <string name="resendCodeWait"><font fgcolor='#FFFFFF'>Resend code in %1$d seconds…</font></string>
+    <string name="resendLink"><font fgcolor='#AA57FF'>Resend link</font></string>
+
     <string name="expand_your_circle">Expand Your Circle</string>
     <string name="_1by2day">1by2day</string>
     <string name="we_got_you">We Got You</string>
