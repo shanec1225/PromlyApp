@@ -174,7 +174,7 @@
                     android:minHeight="48dp"
                     android:text="@string/add_today_s_goal"
                     android:textAllCaps="false"
-                    android:textColor="@color/promly_purple"
+                    android:textColor="@color/promly_brand_purple"
                     android:textSize="12sp"
                     tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
 
@@ -305,7 +305,7 @@
                     android:minHeight="0dp"
                     android:text="@string/complete_board"
                     android:textAllCaps="false"
-                    android:textColor="@color/coral"
+                    android:textColor="@color/coral_red"
                     android:textSize="12sp"
                     tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
 
@@ -421,7 +421,7 @@
             android:fontFamily="@font/avenir_ltstd_black"
             android:text="@string/share_your_voice"
             android:textAlignment="center"
-            android:textColor="@color/promly_purple" />
+            android:textColor="@color/promly_brand_purple" />
 
         <ImageView
             android:id="@+id/imageViewMessageBubble"

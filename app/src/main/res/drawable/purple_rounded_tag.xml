@@ -3,7 +3,7 @@
     <item>
         <shape android:shape="rectangle"  >
             <corners android:radius="8dip" />
-            <solid android:color="@color/purple_gradient_left"/>
+            <solid android:color="@color/promly_brand_purple"/>
         </shape>
     </item>
 </selector>

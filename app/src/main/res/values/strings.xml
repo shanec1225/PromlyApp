@@ -9,11 +9,8 @@
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
-
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
-    <string name="profile2">Profile2</string>
-    <string name="profile4">Profile4</string>
     <string name="imgDes1"> A blank square box with purple gradient effect</string>
     <string name="gradientTop"> Gradient effect the top of the device</string>
     <string name="name">Name</string>
@@ -115,4 +112,6 @@
     <string name="more">more</string>
     <string name="temp_goal">Finish the last chapter of the book I\'ve been reading for the past month!</string>
     <string name="_1by2day">1by2day</string>
+    <string name="about_me">About Me</string>
+    <string name="about_me_description">These are what others will see in your profile.</string>
 </resources>

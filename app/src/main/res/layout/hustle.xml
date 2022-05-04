@@ -250,7 +250,7 @@
                                     <androidx.cardview.widget.CardView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        app:cardBackgroundColor="@color/lime_pill"
+                                        app:cardBackgroundColor="@color/lime"
                                         app:cardCornerRadius="6dp">
 
                                         <TextView
@@ -279,7 +279,7 @@
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:text="www.link.com"
-                                            android:textColor="@color/lime_pill"
+                                            android:textColor="@color/lime"
                                             android:textSize="13sp"/>
 
                                     </LinearLayout>
@@ -316,7 +316,7 @@
                                     <androidx.cardview.widget.CardView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        app:cardBackgroundColor="@color/lime_pill"
+                                        app:cardBackgroundColor="@color/lime"
                                         app:cardCornerRadius="6dp">
 
                                         <TextView
@@ -345,7 +345,7 @@
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:text="www.link.com"
-                                            android:textColor="@color/lime_pill"
+                                            android:textColor="@color/lime"
                                             android:textSize="13sp"/>
 
                                     </LinearLayout>
@@ -382,7 +382,7 @@
                                     <androidx.cardview.widget.CardView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        app:cardBackgroundColor="@color/lime_pill"
+                                        app:cardBackgroundColor="@color/lime"
                                         app:cardCornerRadius="6dp">
 
                                         <TextView
@@ -411,7 +411,7 @@
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:text="www.link.com"
-                                            android:textColor="@color/lime_pill"
+                                            android:textColor="@color/lime"
                                             android:textSize="13sp"/>
 
                                     </LinearLayout>
@@ -493,7 +493,7 @@
                                     <androidx.cardview.widget.CardView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        app:cardBackgroundColor="@color/lime_pill"
+                                        app:cardBackgroundColor="@color/lime"
                                         app:cardCornerRadius="6dp">
 
                                         <TextView
@@ -522,7 +522,7 @@
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:text="www.link.com"
-                                            android:textColor="@color/lime_pill"
+                                            android:textColor="@color/lime"
                                             android:textSize="13sp"/>
 
                                     </LinearLayout>
@@ -559,7 +559,7 @@
                                     <androidx.cardview.widget.CardView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        app:cardBackgroundColor="@color/lime_pill"
+                                        app:cardBackgroundColor="@color/lime"
                                         app:cardCornerRadius="6dp">
 
                                         <TextView
@@ -588,7 +588,7 @@
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:text="www.link.com"
-                                            android:textColor="@color/lime_pill"
+                                            android:textColor="@color/lime"
                                             android:textSize="13sp"/>
 
                                     </LinearLayout>
@@ -625,7 +625,7 @@
                                     <androidx.cardview.widget.CardView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        app:cardBackgroundColor="@color/lime_pill"
+                                        app:cardBackgroundColor="@color/lime"
                                         app:cardCornerRadius="6dp">
 
                                         <TextView
@@ -654,7 +654,7 @@
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:text="www.link.com"
-                                            android:textColor="@color/lime_pill"
+                                            android:textColor="@color/lime"
                                             android:textSize="13sp"/>
 
                                     </LinearLayout>

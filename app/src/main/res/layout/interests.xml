@@ -98,7 +98,7 @@
                             android:layout_marginEnd="19dp"
                             android:layout_marginBottom="8dp"
                             android:background="@drawable/purple_pill"
-                            android:backgroundTint="@color/promly_deep_pink"
+                            android:backgroundTint="@color/deep_pink"
                             android:clickable="false"
                             android:fontFamily="@font/avenir_ltstd_black"
                             android:text="@string/art"
@@ -151,7 +151,7 @@
                             android:layout_marginEnd="19dp"
                             android:layout_marginBottom="8dp"
                             android:background="@drawable/purple_pill"
-                            android:backgroundTint="@color/purple_gradient_left"
+                            android:backgroundTint="@color/promly_brand_purple"
                             android:clickable="false"
                             android:fontFamily="@font/avenir_ltstd_black"
                             android:text="@string/adventure"
@@ -204,7 +204,7 @@
                             android:layout_marginEnd="19dp"
                             android:layout_marginBottom="8dp"
                             android:background="@drawable/purple_pill"
-                            android:backgroundTint="@color/skye_blue_pill"
+                            android:backgroundTint="@color/skye"
                             android:clickable="false"
                             android:fontFamily="@font/avenir_ltstd_black"
                             android:text="@string/category"
@@ -250,7 +250,7 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/avenir_ltstd_black"
                         android:text="Follow All"
-                        android:textColor="@color/purple_gradient_left"
+                        android:textColor="@color/promly_brand_purple"
                         android:textFontWeight="100">
                     </TextView>
 
@@ -272,7 +272,7 @@
                             android:textAllCaps="false"
                             android:textColor="@color/white"
                             app:background="@drawable/rounded_button"
-                            app:backgroundTint="@color/purple_gradient_left"
+                            app:backgroundTint="@color/promly_brand_purple"
                             tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck"
                             android:theme="@style/Theme.MaterialComponents.Light"/>
 
@@ -291,12 +291,12 @@
                             android:padding="5dp"
                             android:text="@string/stocks"
                             android:textAllCaps="false"
-                            android:textColor="@color/purple_gradient_left"
+                            android:textColor="@color/promly_brand_purple"
                             app:background="@drawable/rounded_button"
                             app:backgroundTint="@color/transparent"
                             tools:ignore="TouchTargetSizeCheck"
                             app:strokeWidth="1dp"
-                            app:strokeColor="@color/purple_gradient_left"
+                            app:strokeColor="@color/promly_brand_purple"
                             android:theme="@style/Theme.MaterialComponents.Light"/>
 
                         <Space
@@ -314,12 +314,12 @@
                             android:padding="5dp"
                             android:text="@string/entrepreneurship"
                             android:textAllCaps="false"
-                            android:textColor="@color/purple_gradient_left"
+                            android:textColor="@color/promly_brand_purple"
                             app:background="@drawable/rounded_button"
                             app:backgroundTint="@color/transparent"
                             tools:ignore="TouchTargetSizeCheck"
                             app:strokeWidth="1dp"
-                            app:strokeColor="@color/purple_gradient_left"
+                            app:strokeColor="@color/promly_brand_purple"
                             android:theme="@style/Theme.MaterialComponents.Light"/>
 
                     </LinearLayout>
@@ -342,12 +342,12 @@
                             android:padding="5dp"
                             android:text="@string/finance"
                             android:textAllCaps="false"
-                            android:textColor="@color/purple_gradient_left"
+                            android:textColor="@color/promly_brand_purple"
                             app:background="@drawable/rounded_button"
                             app:backgroundTint="@color/transparent"
                             tools:ignore="TouchTargetSizeCheck"
                             app:strokeWidth="1dp"
-                            app:strokeColor="@color/purple_gradient_left"
+                            app:strokeColor="@color/promly_brand_purple"
                             android:theme="@style/Theme.MaterialComponents.Light"/>
 
                         <Space
@@ -365,12 +365,12 @@
                             android:padding="5dp"
                             android:text="@string/cryptocurrency"
                             android:textAllCaps="false"
-                            android:textColor="@color/purple_gradient_left"
+                            android:textColor="@color/promly_brand_purple"
                             app:background="@drawable/rounded_button"
                             app:backgroundTint="@color/transparent"
                             tools:ignore="TouchTargetSizeCheck"
                             app:strokeWidth="1dp"
-                            app:strokeColor="@color/purple_gradient_left"
+                            app:strokeColor="@color/promly_brand_purple"
                             android:theme="@style/Theme.MaterialComponents.Light"/>
 
                         <Space
@@ -388,12 +388,12 @@
                             android:padding="5dp"
                             android:text="@string/economics"
                             android:textAllCaps="false"
-                            android:textColor="@color/purple_gradient_left"
+                            android:textColor="@color/promly_brand_purple"
                             app:background="@drawable/rounded_button"
                             app:backgroundTint="@color/transparent"
                             tools:ignore="TouchTargetSizeCheck"
                             app:strokeWidth="1dp"
-                            app:strokeColor="@color/purple_gradient_left"
+                            app:strokeColor="@color/promly_brand_purple"
                             android:theme="@style/Theme.MaterialComponents.Light"/>
 
                         </LinearLayout>
@@ -427,7 +427,7 @@
                                     android:layout_marginEnd="19dp"
                                     android:layout_marginBottom="8dp"
                                     android:background="@drawable/purple_pill"
-                                    android:backgroundTint="@color/lime_pill"
+                                    android:backgroundTint="@color/lime"
                                     android:clickable="false"
                                     android:fontFamily="@font/avenir_ltstd_black"
                                     android:text="@string/category"
@@ -480,12 +480,12 @@
                                     android:layout_marginEnd="19dp"
                                     android:layout_marginBottom="8dp"
                                     android:background="@drawable/purple_pill"
-                                    android:backgroundTint="@color/lemon_pill"
+                                    android:backgroundTint="@color/lemon"
                                     android:clickable="false"
                                     android:fontFamily="@font/avenir_ltstd_black"
                                     android:text="@string/category"
                                     android:textAllCaps="false"
-                                    android:textColor="@color/purple_gradient_left"
+                                    android:textColor="@color/promly_brand_purple"
                                     android:textSize="15sp" />
 
                                 <androidx.appcompat.widget.AppCompatButton
@@ -533,7 +533,7 @@
                                     android:layout_marginEnd="19dp"
                                     android:layout_marginBottom="8dp"
                                     android:background="@drawable/purple_pill"
-                                    android:backgroundTint="@color/tangerine_pill"
+                                    android:backgroundTint="@color/tangerine"
                                     android:clickable="false"
                                     android:fontFamily="@font/avenir_ltstd_black"
                                     android:text="@string/category"
@@ -588,7 +588,7 @@
                                     android:layout_marginEnd="19dp"
                                     android:layout_marginBottom="8dp"
                                     android:background="@drawable/purple_pill"
-                                    android:backgroundTint="@color/coral_red_pill"
+                                    android:backgroundTint="@color/coral_red"
                                     android:clickable="false"
                                     android:fontFamily="@font/avenir_ltstd_black"
                                     android:text="@string/category"
@@ -641,7 +641,7 @@
                                     android:layout_marginEnd="19dp"
                                     android:layout_marginBottom="8dp"
                                     android:background="@drawable/purple_pill"
-                                    android:backgroundTint="@color/promly_deep_pink"
+                                    android:backgroundTint="@color/deep_pink"
                                     android:clickable="false"
                                     android:fontFamily="@font/avenir_ltstd_black"
                                     android:text="@string/category"
@@ -694,7 +694,7 @@
                                     android:layout_marginEnd="19dp"
                                     android:layout_marginBottom="8dp"
                                     android:background="@drawable/purple_pill"
-                                    android:backgroundTint="@color/purple_gradient_left"
+                                    android:backgroundTint="@color/promly_brand_purple"
                                     android:clickable="false"
                                     android:fontFamily="@font/avenir_ltstd_black"
                                     android:text="@string/category"
@@ -749,7 +749,7 @@
                                     android:layout_marginEnd="19dp"
                                     android:layout_marginBottom="8dp"
                                     android:background="@drawable/purple_pill"
-                                    android:backgroundTint="@color/coral_red_pill"
+                                    android:backgroundTint="@color/coral_red"
                                     android:clickable="false"
                                     android:fontFamily="@font/avenir_ltstd_black"
                                     android:text="@string/category"
@@ -801,7 +801,7 @@
                                     android:layout_marginEnd="19dp"
                                     android:layout_marginBottom="8dp"
                                     android:background="@drawable/purple_pill"
-                                    android:backgroundTint="@color/promly_deep_pink"
+                                    android:backgroundTint="@color/deep_pink"
                                     android:clickable="false"
                                     android:fontFamily="@font/avenir_ltstd_black"
                                     android:text="@string/category"
@@ -854,7 +854,7 @@
                                     android:layout_marginEnd="19dp"
                                     android:layout_marginBottom="8dp"
                                     android:background="@drawable/purple_pill"
-                                    android:backgroundTint="@color/purple_gradient_left"
+                                    android:backgroundTint="@color/promly_brand_purple"
                                     android:clickable="false"
                                     android:fontFamily="@font/avenir_ltstd_black"
                                     android:text="@string/category"

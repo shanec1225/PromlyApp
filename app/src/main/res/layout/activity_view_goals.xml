@@ -198,7 +198,7 @@
                         android:fontFamily="@font/avenir_ltstd_black"
                         android:text="@string/today"
                         android:textAlignment="center"
-                        android:textColor="@color/promly_deep_pink"
+                        android:textColor="@color/deep_pink"
                         android:textSize="20sp" />
 
                     <EditText

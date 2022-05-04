@@ -62,7 +62,7 @@ public class CheckEmailPromptScreen extends AppCompatActivity {
 
     void changeResendLinkText() {
         resendLinkButton.setAlpha((float)1.0);
-        resendLinkButton.setTextColor(getResources().getColor(R.color.purple_gradient_left));
+        resendLinkButton.setTextColor(getResources().getColor(R.color.promly_brand_purple));
         resendLinkButton.setText(getString(R.string.resendLink));
         resendLinkButton.setEnabled(true);
 

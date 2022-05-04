@@ -6,8 +6,8 @@
             <gradient
             android:type="linear"
             android:angle="0"
-            android:startColor="@color/purple_gradient_left"
-            android:endColor="@color/purple_gradient_right"
+            android:startColor="@color/promly_brand_purple"
+            android:endColor="@color/promly_gradient_blue"
             />
         </shape>
     </item>
@@ -17,8 +17,8 @@
             <gradient
                 android:type="linear"
                 android:angle="0"
-                android:startColor="@color/purple_gradient_left"
-                android:endColor="@color/purple_gradient_right"
+                android:startColor="@color/promly_brand_purple"
+                android:endColor="@color/promly_gradient_blue"
                 />
         </shape>
     </item>
@@ -39,8 +39,8 @@
             <gradient
                 android:type="linear"
                 android:angle="0"
-                android:startColor="@color/purple_gradient_left"
-                android:endColor="@color/purple_gradient_right"
+                android:startColor="@color/promly_brand_purple"
+                android:endColor="@color/promly_gradient_blue"
                 />
         </shape>
     </item>

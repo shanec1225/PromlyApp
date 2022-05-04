@@ -36,11 +36,10 @@
         android:layout_width="275dp"
         android:layout_height="104dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="26dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.19">
+        app:layout_constraintTop_toBottomOf="@+id/profile1Skip">
 
         <LinearLayout
             android:layout_width="275dp"
@@ -80,11 +79,10 @@
         android:layout_width="333dp"
         android:layout_height="372dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.68">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
 
         <LinearLayout
             android:id="@+id/p1_Button1"
@@ -92,15 +90,16 @@
             android:layout_height="42dp"
             android:layout_marginTop="8dp"
             android:background="@drawable/ic_profile1_round_button1"
+            android:onClick="MeetNewPeople"
             android:orientation="horizontal"
-            android:onClick="MeetNewPeople">
+            tools:ignore="TouchTargetSizeCheck">
 
             <LinearLayout
                 android:id="@+id/check1"
                 android:layout_width="24dp"
                 android:layout_height="22dp"
-                android:layout_marginTop="11dp"
                 android:layout_marginStart="16dp"
+                android:layout_marginTop="11dp"
                 android:alpha=".2"
                 android:background="@drawable/ic_profile1_white_circle"
                 android:gravity="center_vertical"
@@ -112,13 +111,13 @@
                 android:id="@+id/textView18"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
                 android:layout_weight="1"
                 android:fontFamily="@font/avenir_ltstd_book"
                 android:gravity="center_vertical"
-                android:textSize="17sp"
+                android:text="Meet new people"
                 android:textColor="@color/white"
-                android:layout_marginStart="16dp"
-                android:text="Meet new people" />
+                android:textSize="17sp" />
 
         </LinearLayout>
 
@@ -333,20 +332,22 @@
         </LinearLayout>
     </LinearLayout>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/profile1_Next"
-        android:layout_width="312dp"
-        android:layout_height="42dp"
-        android:layout_marginEnd="40dp"
-        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/pink_purple_gradient_button"
-        android:baselineAligned="false"
-        android:text="Next"
+        android:fontFamily="@font/avenir_ltstd_black"
+        android:text="@string/next"
         android:textAllCaps="false"
+        android:textColor="@color/white"
         android:textSize="17sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.914" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

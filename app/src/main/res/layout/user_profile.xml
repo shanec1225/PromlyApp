@@ -81,7 +81,7 @@
                     android:layout_height="wrap_content"
                     android:text="\@arlenemc"
                     android:layout_weight="1"
-                    android:textColor="@color/promly_deep_pink"
+                    android:textColor="@color/deep_pink"
                     android:textSize="17sp"
                     android:fontFamily="@font/avenir_ltstd_book"/>
 
@@ -95,7 +95,7 @@
                     android:textSize="13sp"
                     android:textAlignment="center"
                     android:background="@drawable/edit_profile_button"
-                    android:textColor="@color/purple_gradient_left"
+                    android:textColor="@color/promly_brand_purple"
                     android:fontFamily="@font/avenir_ltstd_book"
                     android:text="Edit" />
 
@@ -532,7 +532,7 @@
                     android:paddingVertical="6dp"
                     android:textSize="15sp"
                     android:fontFamily="@font/avenir_ltstd_black"
-                    android:textColor="@color/purple_gradient_left"
+                    android:textColor="@color/promly_brand_purple"
                     android:text="edit interests"
                     android:background="@drawable/edit_interests_button"
                     android:layout_marginStart="8dp"/>
@@ -567,7 +567,7 @@
                     android:fontFamily="@font/avenir_ltstd_black"
                     android:text="more"
                     android:textAlignment="viewEnd"
-                    android:textColor="@color/purple_gradient_left"
+                    android:textColor="@color/promly_brand_purple"
                     android:textSize="20sp" />
 
             </LinearLayout>

@@ -106,7 +106,7 @@
         android:textAlignment="center"
         android:hint="just one thing"
         android:textColorHint="#3FAA57FF"
-        android:textColor="@color/purple_gradient_left"
+        android:textColor="@color/promly_brand_purple"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
