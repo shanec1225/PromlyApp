@@ -74,7 +74,6 @@
     <string name="checkEmailText2">Go to your email and tap the link to sign you in.</string>
     <string name="resendCodeWait"><font fgcolor='#FFFFFF'>Resend code in %1$d seconds…</font></string>
     <string name="resendLink"><font fgcolor='#AA57FF'>Resend link</font></string>
-    <string name="_1by2day">1by2day</string>
     <string name="complete_board">Complete board</string>
     <string name="shop">Shop</string>
     <string name="dark_gradient_top">dark gradient top</string>
@@ -115,4 +114,5 @@
     <string name="economics">#economics</string>
     <string name="more">more</string>
     <string name="temp_goal">Finish the last chapter of the book I\'ve been reading for the past month!</string>
+    <string name="_1by2day">1by2day</string>
 </resources>
