@@ -1,5 +1,65 @@
 <resources>
     <string name="app_name">PromlyApp</string>
+    <string name="interestsTitle">Interests</string>
+    <string name="interestsDescription">Promly matches you to your peers based on the things you like.
+        Select at least 5.</string>
+    <string name="title_activity_profile4">profile4</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="profile2">Profile2</string>
+    <string name="profile4">Profile4</string>
+    <string name="imgDes1"> A blank square box with purple gradient effect</string>
+    <string name="gradientTop"> Gradient effect the top of the device</string>
+    <string name="name">Name</string>
+    <string name="birthday">Birthday</string>
+    <string name="letsGo">Let\'s Go</string>
+    <string name="addPhoto">add a photo *</string>
+    <string name="lastStep">Last Step</string>
+    <string name="username">\@username</string>
+    <string name="profile_image">Profile image</string>
+    <string name="back_button_to_profile_3">Back button to profile 3</string>
+    <string name="birthday_check_mark">birthday check mark</string>
+    <string name="check_for_name_input">check for name input</string>
+    <string name="check_mark_for_the_image">Check mark for the image</string>
+    <string name="check_for_the_username_input">check for the username input</string>
+    <string name="smile_on_the_profile_pic_box">Smile on the profile pic box</string>
+    <string name="profile2_title">Interests</string>
+    <string name="back_button_to_profile_1">Back button to profile 1</string>
+    <string name="profile2DescriptionText">Promly matches you to your peers based on the things you like.</string>
+    <string name="select_at_least_5">Select at least 5.</string>
+    <string name="bottom_center_image">bottom center image</string>
+    <string name="bottom_left_image">bottom left image</string>
+    <string name="bottom_right_image">bottom right image</string>
+    <string name="middle_left_image">middle left image</string>
+    <string name="middle_center_image">middle center image</string>
+    <string name="middle_right_image">middle right image</string>
+    <string name="top_center_image">top center image</string>
+    <string name="top_left_image">top left image</string>
+    <string name="top_right_image">top right image</string>
+    <string name="plus">+</string>
+    <string name="category">#category</string>
+    <string name="art">#art</string>
+    <string name="adventure">#adventure</string>
+    <string name="purple_gradient_desc">purple gradient</string>
+    <string name="pink_gradient_image_view_desc">pink gradient image view</string>
+    <string name="today">Today</string>
+    <string name="set_1by2day">set 1by2day</string>
+    <string name="set_a_bite_sized_goal">set a bite-sized goal</string>
+    <string name="pink_check_desc">pink check</string>
+    <string name="finish_a_book">finish a book</string>
+    <string name="eat_healthy">eat healthy</string>
+    <string name="workout">workout</string>
+    <string name="type_something">type something</string>
+    <string name="you_ve_cleared_your_goal_for_the_day_set_tomorrow_s">You’ve cleared your goal for the day. Set tomorrow’s?</string>
+    <string name="expand_your_circle">Expand Your Circle</string>
+    <string name="we_got_you">We Got You</string>
+    <string name="explore">explore</string>
     <string name="respect_code_agreement">Welcome to Promly!
 
         <br/>\n\nPlease remember to be respectful of your fellow users. This platform is designed to empower teens- Created for GenZ by GenZ.
@@ -14,10 +74,7 @@
     <string name="checkEmailText2">Go to your email and tap the link to sign you in.</string>
     <string name="resendCodeWait"><font fgcolor='#FFFFFF'>Resend code in %1$d seconds…</font></string>
     <string name="resendLink"><font fgcolor='#AA57FF'>Resend link</font></string>
-
-    <string name="expand_your_circle">Expand Your Circle</string>
     <string name="_1by2day">1by2day</string>
-    <string name="we_got_you">We Got You</string>
     <string name="complete_board">Complete board</string>
     <string name="shop">Shop</string>
     <string name="dark_gradient_top">dark gradient top</string>

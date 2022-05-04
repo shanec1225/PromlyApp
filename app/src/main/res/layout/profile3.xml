@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/about_me_layer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="false"
+    android:gravity="bottom|center_horizontal">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#000000">
+
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="393dp"
+            android:layout_height="60dp"
+            android:alpha="0.4"
+            android:background="@drawable/top_purple_gradient"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="287dp"
+            android:layout_height="90dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/space4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view2">
+
+            <LinearLayout
+                android:layout_width="287dp"
+                android:layout_height="40dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/avenir_ltstd_black"
+                    android:gravity="center_horizontal"
+                    android:text="About Me"
+                    android:textColor="@color/white"
+                    android:textSize="34sp" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="287dp"
+                android:layout_height="8dp" />
+
+            <LinearLayout
+                android:layout_width="287dp"
+                android:layout_height="42dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/avenir_ltstd_book"
+                    android:gravity="center"
+                    android:text="These are what others will see in your profile."
+                    android:textColor="@color/white"
+                    android:textSize="17sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Space
+            android:id="@+id/space4"
+            android:layout_width="333dp"
+            android:layout_height="24dp"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.883" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="332dp"
+            android:layout_height="136dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/space3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
+
+            <LinearLayout
+                android:id="@+id/p3_School_Button"
+                android:layout_width="333dp"
+                android:layout_height="42dp"
+                android:background="@drawable/ic_profile3_round_button1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/school"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_weight="0"
+                    app:srcCompat="@drawable/ic_school_purple" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="183dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/avenir_ltstd_book"
+                    android:gravity="center_vertical"
+                    android:text="School"
+                    android:textColor="#AA57FF"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="0dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/avenir_ltstd_book"
+                    android:gravity="center_vertical"
+                    android:text="Required"
+                    android:textColor="#AA57FF"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="343dp"
+                android:layout_height="8dp" />
+
+            <LinearLayout
+                android:id="@+id/p3_Grade_Button"
+                android:layout_width="333dp"
+                android:layout_height="42dp"
+                android:background="@drawable/ic_profile3_round_button2"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/chalkboard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_weight="0"
+                    app:srcCompat="@drawable/ic_chalkboard" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="183dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/avenir_ltstd_book"
+                    android:gravity="center_vertical"
+                    android:text="Grade"
+                    android:textColor="#04D4F9"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="0dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/avenir_ltstd_book"
+                    android:gravity="center_vertical"
+                    android:text="Required"
+                    android:textColor="#04D4F9"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Space
+            android:id="@+id/space3"
+            android:layout_width="333dp"
+            android:layout_height="14dp"
+            android:layout_marginBottom="1dp"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="332dp"
+            android:layout_height="367dp"
+            android:layout_marginTop="128dp"
+            android:layout_marginBottom="77dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="333dp"
+                android:layout_height="19dp"
+                android:text="Answer at least 3"
+                android:textAlignment="center"
+                android:textColor="#AA57FF" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+
+            <LinearLayout
+                android:layout_width="333dp"
+                android:layout_height="48dp"
+                android:background="@drawable/ic_profile3_round_button3"
+                android:clickable="true"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_weight="0"
+                    app:srcCompat="@drawable/ic_tv_alt" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/avenir_ltstd_book"
+                    android:gravity="center_vertical"
+                    android:text="Favorite Show"
+                    android:textColor="#0BE014"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <android.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+
+            <LinearLayout
+                android:layout_width="333dp"
+                android:layout_height="48dp"
+                android:background="@drawable/ic_profile3_round_button4"
+                android:clickable="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/artist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="14dp"
+                    app:srcCompat="@drawable/ic_user_music" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/avenir_ltstd_book"
+                    android:gravity="center_vertical"
+                    android:text="Favorite Artist"
+                    android:textColor="#E5E301"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+
+            <LinearLayout
+                android:layout_width="333dp"
+                android:layout_height="48dp"
+                android:background="@drawable/ic_profile3_round_button5"
+                android:clickable="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/music"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="14dp"
+                    app:srcCompat="@drawable/ic_music" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/avenir_ltstd_book"
+                    android:gravity="center_vertical"
+                    android:text="Favorite Music"
+                    android:textColor="#FA990C"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+
+            <LinearLayout
+                android:layout_width="333dp"
+                android:layout_height="48dp"
+                android:background="@drawable/ic_profile3_round_button6"
+                android:clickable="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/film"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="14dp"
+                    app:srcCompat="@drawable/ic_film_alt" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/avenir_ltstd_book"
+                    android:gravity="center_vertical"
+                    android:text="Favorite movie genre"
+                    android:textColor="#FF0A45"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+
+            <LinearLayout
+                android:layout_width="333dp"
+                android:layout_height="48dp"
+                android:background="@drawable/ic_profile3_round_button7"
+                android:clickable="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/archway"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="14dp"
+                    app:srcCompat="@drawable/ic_archway" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/avenir_ltstd_book"
+                    android:gravity="center_vertical"
+                    android:text="Dream travel destination"
+                    android:textColor="#FF1696"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+
+            <LinearLayout
+                android:layout_width="333dp"
+                android:layout_height="48dp"
+                android:background="@drawable/ic_profile3_round_button8"
+                android:clickable="true"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/user_tie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="14dp"
+                    app:srcCompat="@drawable/ic_user_tie" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/avenir_ltstd_book"
+                    android:gravity="center_vertical"
+                    android:text="Career goal"
+                    android:textColor="#AA57FF"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="343dp"
+            android:layout_height="19dp"
+            app:layout_constraintBottom_toTopOf="@+id/profile3_Next"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/profile3_Next"
+            android:layout_width="312dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/pink_purple_gradient_button"
+            android:baselineAligned="false"
+            android:text="Next"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.978" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

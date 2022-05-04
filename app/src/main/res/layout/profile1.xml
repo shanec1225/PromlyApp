@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="393dp"
+        android:layout_height="60dp"
+        android:alpha="0.4"
+        android:background="@drawable/top_purple_gradient"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/avenir_ltstd_book"
+        android:text="Skip"
+        android:textColor="#AA57FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.882"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.084" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="275dp"
+        android:layout_height="104dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19">
+
+        <LinearLayout
+            android:layout_width="275dp"
+            android:layout_height="78dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="What brings you here?"
+                android:textColor="@color/white"
+                android:textSize="34sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="275dp"
+            android:layout_height="21dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="center_horizontal
+"
+                android:text="Select all that apply"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="333dp"
+        android:layout_height="372dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.68">
+
+        <LinearLayout
+            android:id="@+id/p1_Button1"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/ic_profile1_round_button1"
+            android:orientation="horizontal"
+            android:onClick="MeetNewPeople">
+
+            <LinearLayout
+                android:id="@+id/check1"
+                android:layout_width="24dp"
+                android:layout_height="22dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginStart="16dp"
+                android:alpha=".2"
+                android:background="@drawable/ic_profile1_white_circle"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/avenir_ltstd_book"
+                android:gravity="center_vertical"
+                android:textSize="17sp"
+                android:textColor="@color/white"
+                android:layout_marginStart="16dp"
+                android:text="Meet new people" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/p1_Button2"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/ic_profile1_round_button2"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/check2"
+                android:layout_width="24dp"
+                android:layout_height="21dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginStart="16dp"
+                android:alpha=".2"
+                android:background="@drawable/ic_profile1_white_circle"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/avenir_ltstd_book"
+                android:gravity="center_vertical"
+                android:text="Stay updated with friends"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/p1_Button3"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/ic_profile1_round_button3"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/check3"
+                android:layout_width="24dp"
+                android:layout_height="21dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginStart="16dp"
+                android:alpha=".2"
+                android:background="@drawable/ic_profile1_white_circle"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+            </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/avenir_ltstd_book"
+                    android:gravity="center_vertical"
+                    android:textSize="17sp"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="16dp"
+                    android:text="Set goals &amp; make a vision board" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/p1_Button4"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/ic_profile1_round_button4"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/check4"
+                android:layout_width="24dp"
+                android:layout_height="21dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginStart="16dp"
+                android:alpha=".2"
+                android:background="@drawable/ic_profile1_white_circle"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+            </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/avenir_ltstd_book"
+                    android:gravity="center_vertical"
+                    android:textSize="17sp"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="16dp"
+                    android:text="Get access to mental health resources" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/p1_Button5"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/ic_profile1_round_button5"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/check5"
+                android:layout_width="24dp"
+                android:layout_height="21dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginStart="16dp"
+                android:alpha=".2"
+                android:background="@drawable/ic_profile1_white_circle"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+            </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/avenir_ltstd_book"
+                    android:gravity="center_vertical"
+                    android:textSize="17sp"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="16dp"
+                    android:text="Read interesting content" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/p1_Button6"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/ic_profile1_round_button6"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/check6"
+                android:layout_width="24dp"
+                android:layout_height="21dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginStart="16dp"
+                android:alpha=".2"
+                android:background="@drawable/ic_profile1_white_circle"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+            </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/avenir_ltstd_book"
+                    android:gravity="center_vertical"
+                    android:textSize="17sp"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="16dp"
+                    android:text="Entertainment" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/p1_Button7"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/ic_profile1_round_button7"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/check7"
+                android:layout_width="24dp"
+                android:layout_height="21dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginStart="16dp"
+                android:alpha=".2"
+                android:background="@drawable/ic_profile1_white_circle"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+            </LinearLayout>
+
+            <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/avenir_ltstd_book"
+                    android:gravity="center_vertical"
+                    android:textSize="17sp"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="16dp"
+                    android:text="Learn something new" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/profile1_Next"
+        android:layout_width="312dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="40dp"
+        android:layout_weight="1"
+        android:background="@drawable/pink_purple_gradient_button"
+        android:baselineAligned="false"
+        android:text="Next"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.914" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
