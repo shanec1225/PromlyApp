@@ -1,3 +1,26 @@
 <resources>
     <string name="app_name">PromlyApp</string>
+    <string name="expand_your_circle">Expand Your Circle</string>
+    <string name="_1by2day">1by2day</string>
+    <string name="we_got_you">We Got You</string>
+    <string name="complete_board">Complete board</string>
+    <string name="shop">Shop</string>
+    <string name="dark_gradient_top">dark gradient top</string>
+    <string name="hustle">Hustle</string>
+    <string name="add_today_s_goal">Add today’s goal</string>
+    <string name="spin_me">Spin Me</string>
+    <string name="share_your_voice">Share Your Voice</string>
+    <string name="_20by20">20by20</string>
+    <string name="back_ground_of_explore_page">back ground of explore page</string>
+    <string name="_20by20_image">20by20 image</string>
+    <string name="flag_image_on_1by2day">Flag image on 1by2day</string>
+    <string name="we_got_you_high_5">We got you high 5</string>
+    <string name="shopping_bag_on_shop">Shopping bag on shop</string>
+    <string name="money_sign_on_hustle">Money sign on hustle</string>
+    <string name="message_icon_on_share_your_voice">Message icon on share your voice</string>
+    <string name="promly_disco_ball">Promly disco ball</string>
+    <string name="top_icon_on_right">Top icon on right</string>
+    <string name="middle_avatar_on_expand_circle">middle avatar on expand circle</string>
+    <string name="avatar_on_expand_circle">avatar on expand circle</string>
+    <string name="top_icon_left_side">Top icon left side</string>
 </resources>

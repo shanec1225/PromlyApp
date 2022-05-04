@@ -1,0 +1,23 @@
+<!-- drawable/pill.xml -->
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="125dp"
+    android:height="26dp"
+    android:viewportWidth="125"
+    android:viewportHeight="26"
+    >
+
+    <group>
+
+        <clip-path
+            android:pathData="M13 1H112C118.627 1 124 6.37258 124 13C124 19.6274 118.627 25 112 25H13C6.37258 25 1 19.6274 1 13C1 6.37258 6.37258 1 13 1Z"
+            />
+
+        <path
+            android:pathData="M1 1V25H124V1"
+            android:fillColor="#CCFFFFFF"
+            />
+
+    </group>
+
+</vector>

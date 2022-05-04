@@ -4,15 +4,449 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".MainActivity">
 
-    <TextView
+    <!--Gradient at the top of the page-->
+
+    <ImageView
+        android:id="@+id/imageViewIconRight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_marginStart="345dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:contentDescription="@string/top_icon_on_right"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/righticon" />
+
+    <ImageView
+        android:id="@+id/imageViewBackground"
+        android:layout_width="417dp"
+        android:layout_height="932dp"
+        android:contentDescription="@string/back_ground_of_explore_page"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/explore_background" />
+
+    <ImageView
+        android:id="@+id/topGradient"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:alpha="0.4"
+        android:background="@drawable/dark_gradient"
+        android:contentDescription="@string/dark_gradient_top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ImageContrastCheck" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="80dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutLeft"
+            android:layout_width="175dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/expand_circle_base"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/imageViewAvatar5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="125dp"
+                    android:layout_marginTop="42dp"
+                    android:contentDescription="@string/avatar_on_expand_circle"
+                    app:srcCompat="@drawable/avatar5" />
+
+                <ImageView
+                    android:id="@+id/imageViewAvatar4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="103dp"
+                    android:layout_marginTop="6dp"
+                    android:contentDescription="@string/avatar_on_expand_circle"
+                    app:srcCompat="@drawable/avatar4" />
+
+                <ImageView
+                    android:id="@+id/imageViewAvatar3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="55dp"
+                    android:layout_marginTop="7dp"
+                    android:contentDescription="@string/avatar_on_expand_circle"
+                    app:srcCompat="@drawable/avatar3"
+                    tools:ignore="ImageContrastCheck" />
+
+                <ImageView
+                    android:id="@+id/imageViewAvatar2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="34dp"
+                    android:contentDescription="@string/avatar_on_expand_circle"
+                    app:srcCompat="@drawable/avatar2"
+                    tools:ignore="ImageContrastCheck" />
+
+                <ImageView
+                    android:id="@+id/imageViewAvatar1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="44dp"
+                    android:contentDescription="@string/middle_avatar_on_expand_circle"
+                    app:srcCompat="@drawable/avatar1" />
+
+                <Button
+                    android:id="@+id/buttonExpandCircle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0"
+                    android:stateListAnimator="@null" />
+
+                <TextView
+                    android:id="@+id/expandYourCircleText"
+                    android:layout_width="123dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="130dp"
+                    android:fontFamily="@font/avenir_ltstd_black"
+                    android:text="@string/expand_your_circle"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    tools:ignore="TextContrastCheck" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/purple_base_explore"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/imageViewFlag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:contentDescription="@string/flag_image_on_1by2day"
+                    app:srcCompat="@drawable/goal" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/buttonWhitePill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="136dp"
+                    android:background="@drawable/pill"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/avenir_ltstd_black"
+                    android:minWidth="0dp"
+                    android:minHeight="48dp"
+                    android:text="@string/add_today_s_goal"
+                    android:textAllCaps="false"
+                    android:textColor="@color/promly_purple"
+                    android:textSize="12sp"
+                    tools:ignore="TextContrastCheck" />
+
+                <Button
+                    android:id="@+id/button1By2Day"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0"
+                    android:stateListAnimator="@null" />
+
+                <TextView
+                    android:id="@+id/one_by_2dayText"
+                    android:layout_width="123dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="100dp"
+                    android:fontFamily="@font/avenir_ltstd_black"
+                    android:text="@string/_1by2day"
+                    android:textColor="@color/white"
+                    android:textSize="22sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/pink_base_explore"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/imageViewWeGotYou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="20dp"
+                    android:contentDescription="@string/we_got_you_high_5"
+                    app:srcCompat="@drawable/serve" />
+
+                <TextView
+                    android:id="@+id/weGotYou"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="110dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/avenir_ltstd_black"
+                    android:text="@string/we_got_you"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="22sp" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutRight"
+            android:layout_width="175dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/spin_me_base"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/imageViewDiscoBall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/promly_disco_ball"
+                    app:srcCompat="@drawable/disco_ball"
+                    tools:ignore="ImageContrastCheck" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/buttonSpinMe"
+                    android:layout_width="67dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/spinme_pill"
+                    android:fontFamily="@font/avenir_ltstd_black"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:text="@string/spin_me"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="176dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/twenty_by_20_base"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/imageView20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:contentDescription="@string/_20by20_image"
+                    app:srcCompat="@drawable/surprise" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/buttonWhitePill20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="136dp"
+                    android:background="@drawable/pill"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/avenir_ltstd_black"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:text="@string/complete_board"
+                    android:textAllCaps="false"
+                    android:textColor="@color/coral"
+                    android:textSize="12sp"
+                    tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+                <Button
+                    android:id="@+id/button20By20"
+                    android:layout_width="match_parent"
+                    android:layout_height="176dp"
+                    android:alpha="0"
+                    android:stateListAnimator="@null" />
+
+                <TextView
+                    android:id="@+id/twenty_by_20Text"
+                    android:layout_width="123dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="100dp"
+                    android:fontFamily="@font/avenir_ltstd_black"
+                    android:text="@string/_20by20"
+                    android:textColor="@color/white"
+                    android:textSize="22sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:background="@drawable/shop_base"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:id="@+id/shop"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginVertical="35dp"
+                    android:layout_marginStart="66dp"
+                    android:fontFamily="@font/avenir_ltstd_black"
+                    android:text="@string/shop"
+
+                    android:textColor="@color/white"
+                    android:textSize="22sp" />
+
+                <ImageView
+                    android:id="@+id/shop_bag"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginHorizontal="18dp"
+                    android:contentDescription="@string/shopping_bag_on_shop"
+                    android:src="@drawable/promlyshop"
+                    tools:ignore="ImageContrastCheck" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/hustle_base"
+                android:clickable="true"
+                android:focusable="true">
+
+                <Button
+                    android:id="@+id/buttonHustle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0"
+                    android:stateListAnimator="@null" />
+
+                <TextView
+                    android:id="@+id/hustle"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginVertical="30dp"
+                    android:layout_marginStart="66dp"
+                    android:fontFamily="@font/avenir_ltstd_black"
+                    android:text="@string/hustle"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    tools:ignore="TextContrastCheck" />
+
+                <ImageView
+                    android:id="@+id/hustle_money"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginHorizontal="18dp"
+                    android:contentDescription="@string/money_sign_on_hustle"
+                    app:srcCompat="@drawable/hustle"
+                    tools:ignore="ImageContrastCheck" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/share_your_voice_button"
+            android:fontFamily="@font/avenir_ltstd_black"
+            android:text="@string/share_your_voice"
+            android:textAlignment="center"
+            android:textColor="@color/promly_purple" />
+
+        <ImageView
+            android:id="@+id/imageViewMessageBubble"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="75dp"
+            android:contentDescription="@string/message_icon_on_share_your_voice"
+            app:srcCompat="@drawable/message_bubble"
+            tools:ignore="ImageContrastCheck" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/imageViewIconLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:contentDescription="@string/top_icon_left_side"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/notifiyicon" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
