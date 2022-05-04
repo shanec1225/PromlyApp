@@ -176,7 +176,7 @@
                     android:textAllCaps="false"
                     android:textColor="@color/promly_purple"
                     android:textSize="12sp"
-                    tools:ignore="TextContrastCheck" />
+                    tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
 
                 <Button
                     android:id="@+id/button1By2Day"
