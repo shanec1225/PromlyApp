@@ -11,6 +11,7 @@ import android.view.View;
 import com.teamgamma.promlyapp.hustle.Hustle;
 import com.teamgamma.promlyapp.onboarding.profile2;
 import com.teamgamma.promlyapp.onebytwoday.GoalFullscreen;
+import com.teamgamma.promlyapp.onebytwoday.ViewGoals;
 import com.teamgamma.promlyapp.profiles.UserProfile;
 
 public class MainActivity extends AppCompatActivity {
@@ -24,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         Button m1by2day = findViewById(R.id.button1By2Day);
         m1by2day.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view1) {
-                Intent segueTo1by2day = new Intent(view1.getContext(), GoalFullscreen.class);
+                Intent segueTo1by2day = new Intent(view1.getContext(), ViewGoals.class);
                 startActivity(segueTo1by2day);
             };
         });

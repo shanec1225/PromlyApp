@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2358974358974359" />
+        <entry key="app/src/main/res/layout/activity_view_goals.xml" value="0.2876068376068376" />
         <entry key="app/src/main/res/layout/check_email_prompt_screen.xml" value="0.1893162393162393" />
         <entry key="app/src/main/res/layout/code_agreement.xml" value="0.19829059829059828" />
         <entry key="app/src/main/res/layout/disco_splash_screen.xml" value="0.23291139240506328" />
@@ -18,20 +19,6 @@
         <entry key="app/src/main/res/layout/profile4.xml" value="0.335" />
         <entry key="app/src/main/res/layout/serve.xml" value="0.2876068376068376" />
         <entry key="app/src/main/res/layout/user_profile.xml" value="0.22870370370370371" />
-        <entry key="..\:/Users/skowr/Desktop/Promly desktop/app/src/main/res/drawable/pink_button.xml" value="0.157" />
-        <entry key="..\:/Users/skowr/Desktop/Promly desktop/app/src/main/res/drawable/suggestion_pill.xml" value="0.157" />
-        <entry key="..\:/Users/skowr/Desktop/Promly desktop/app/src/main/res/font/avenir_font_family.xml" value="0.21805555555555556" />
-        <entry key="..\:/Users/skowr/Desktop/Promly desktop/app/src/main/res/layout/activity_main.xml" value="0.25161603102779573" />
-        <entry key="..\:/Users/skowr/Desktop/Promly desktop/app/src/main/res/layout/activity_view_goals.xml" value="0.17" />
-        <entry key="..\:/Users/skowr/Desktop/Promly desktop/app/src/main/res/layout/one_by_2day.xml" value="0.11247575953458307" />
-        <entry key="app/src/main/res/drawable/goal_suggestions.xml" value="0.3265" />
-        <entry key="app/src/main/res/drawable/promly_check_empty.xml" value="0.237" />
-        <entry key="app/src/main/res/drawable/promly_check_small.xml" value="0.237" />
-        <entry key="app/src/main/res/drawable/set_goal_button.xml" value="0.237" />
-        <entry key="app/src/main/res/drawable/top_purple_gradient.xml" value="0.3265" />
-        <entry key="app/src/main/res/font/avenir_font_family.xml" value="0.2905982905982906" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.2658119658119658" />
-        <entry key="app/src/main/res/layout/goal_fullscreen.xml" value="0.25" />
       </map>
     </option>
   </component>

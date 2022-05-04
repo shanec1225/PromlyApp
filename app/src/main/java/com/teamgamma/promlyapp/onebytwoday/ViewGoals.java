@@ -1,13 +1,20 @@
-package com.teamgamma.promlyapp;
+package com.teamgamma.promlyapp.onebytwoday;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.teamgamma.promlyapp.R;
+import com.teamgamma.promlyapp.onboarding.profile1;
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
@@ -24,6 +31,15 @@ public class ViewGoals extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_goals);
+
+        // Handles text entry in 1by2day to segue to full screen edit
+        EditText goalText = findViewById(R.id.setGoalbtn);
+        goalText.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view1) {
+                Intent segueToFullScreen = new Intent(view1.getContext(), GoalFullscreen.class);
+                startActivity(segueToFullScreen);
+            };
+        });
 
         // setting and formatting the date
         mDate=findViewById(R.id.date);

@@ -57,18 +57,17 @@
         <activity android:name=".onebytwoday.GoalFullscreen"
             android:exported="true">
         </activity>
+        <activity
+            android:name=".onebytwoday.ViewGoals"
+            android:exported="true">
+        </activity>
         <activity android:name=".hustle.Hustle"
             android:exported="true">
         </activity>
         <activity android:name=".hustle.Serve"
             android:exported="true">
         </activity>
-        <activity android:name=".GoalFullscreen"
-            android:exported="true">
-        </activity>
-        <activity
-            android:name=".ViewGoals"
-            android:exported="false" />
+
     </application>
 
 </manifest>
