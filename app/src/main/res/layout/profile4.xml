@@ -5,21 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    tools:context="profile4">
+    tools:context=".onboarding.profile4">
 
     <!--Back icon wouldn't change color unless I used this instead of Button-->
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/backToProfile3Btn"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="50dp"
-        android:background="@drawable/ic_navicon"
-        android:contentDescription="@string/back_button_to_profile_3"
-        android:tint="@android:color/white"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints,TouchTargetSizeCheck,RedundantDescriptionCheck" />
 
     <!--Gradient at the top of the page-->
     <View
@@ -69,7 +57,8 @@
             android:layout_gravity="center_horizontal"
             app:cardCornerRadius="12dip"
             app:strokeColor="@color/white"
-            app:strokeWidth="4dp">
+            app:strokeWidth="4dp"
+            android:theme="@style/Theme.MaterialComponents.Light">
 
             <ImageView
                 android:id="@+id/selectedImage"
@@ -185,6 +174,7 @@
                 android:fontFamily="@font/avenir_ltstd_black"
                 android:gravity="center"
                 android:hint="@string/name"
+                android:textColorHint="#6F000000"
                 android:importantForAutofill="no"
                 android:inputType="textPersonName"
                 android:textColor="@color/black"
@@ -242,6 +232,7 @@
                 android:fontFamily="@font/avenir_ltstd_black"
                 android:gravity="center"
                 android:hint="@string/username"
+                android:textColorHint="#6F000000"
                 android:importantForAutofill="no"
                 android:inputType="textPersonName"
                 android:textColor="@color/black"
@@ -301,6 +292,7 @@
                 android:fontFamily="@font/avenir_ltstd_black"
                 android:gravity="center"
                 android:hint="@string/birthday"
+                android:textColorHint="#6F000000"
                 android:importantForAutofill="no"
                 android:inputType="date"
                 android:onClick="openDatePicker"

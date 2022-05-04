@@ -1,4 +1,4 @@
-package com.teamgamma.promlyapp;
+package com.teamgamma.promlyapp.authentication;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,6 +6,8 @@ import android.view.View;
 import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.teamgamma.promlyapp.R;
 
 public class MagicLinkScreen extends AppCompatActivity {
     @Override

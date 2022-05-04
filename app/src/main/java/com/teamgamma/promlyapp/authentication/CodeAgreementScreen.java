@@ -1,8 +1,7 @@
-package com.teamgamma.promlyapp;
+package com.teamgamma.promlyapp.authentication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.ActivityOptions;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.LinearGradient;
@@ -13,6 +12,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.ToggleButton;
+
+import com.teamgamma.promlyapp.R;
 
 
 public class CodeAgreementScreen extends AppCompatActivity {

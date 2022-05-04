@@ -5,18 +5,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.widget.Button;
 import android.os.Bundle;
-import android.widget.Button;
 
-import java.util.Objects;
 import android.view.View;
-import android.widget.Button;
-import android.content.Intent;
 
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
+import com.teamgamma.promlyapp.onboarding.profile2;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -27,17 +20,21 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Button m1by2day = findViewById(R.id.button1By2Day);
-        m1by2day.setOnClickListener(view -> {
-            // Switch MainActivity.class with 1by2day class so that when it is pressed it goes to 1by2day
-            Intent intent = new Intent(MainActivity.this, MainActivity.class);
-            startActivity(intent);
+        m1by2day.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view1) {
+                Intent segueTo1by2day = new Intent(view1.getContext(), profile2.class);
+                startActivity(segueTo1by2day);
+                overridePendingTransition(R.anim.right_in, R.anim.left_out);
+            };
         });
 
         Button mHustle = findViewById(R.id.buttonHustle);
-        mHustle.setOnClickListener(view -> {
-            // Switch MainActivity.class with hustle class so that when it is pressed it goes to hustle
-            Intent intent = new Intent(MainActivity.this, MainActivity.class);
-            startActivity(intent);
+        mHustle.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view1) {
+                Intent segueToHustle = new Intent(view1.getContext(), profile2.class);
+                startActivity(segueToHustle);
+                overridePendingTransition(R.anim.right_in, R.anim.left_out);
+            };
         });
 
     }

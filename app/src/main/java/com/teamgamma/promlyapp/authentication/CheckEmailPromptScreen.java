@@ -1,4 +1,4 @@
-package com.teamgamma.promlyapp;
+package com.teamgamma.promlyapp.authentication;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,6 +10,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import java.util.concurrent.*;
 
 import static java.util.concurrent.TimeUnit.SECONDS;
+
+import com.teamgamma.promlyapp.R;
 
 public class CheckEmailPromptScreen extends AppCompatActivity {
 

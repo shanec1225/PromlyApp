@@ -65,20 +65,6 @@
     </LinearLayout>
 
     <!--Back icon wouldn't change color unless I used this instead of Button-->
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/backToProfile1Btn"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="50dp"
-        android:background="@drawable/ic_navicon"
-        android:clickable="true"
-        android:contentDescription="@string/back_button_to_profile_1"
-        android:focusable="true"
-        android:tint="@android:color/white"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints,TouchTargetSizeCheck,RedundantDescriptionCheck" />
 
     <!--Gradient at the top of the page-->
     <ImageView

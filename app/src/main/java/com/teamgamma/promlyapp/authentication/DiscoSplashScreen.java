@@ -1,12 +1,14 @@
-package com.teamgamma.promlyapp;
+package com.teamgamma.promlyapp.authentication;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.teamgamma.promlyapp.R;
+import com.teamgamma.promlyapp.onboarding.profile1;
 
 public class DiscoSplashScreen extends AppCompatActivity {
     @Override
@@ -19,8 +21,8 @@ public class DiscoSplashScreen extends AppCompatActivity {
         ImageView discoBall = findViewById(R.id.discoBallButton);
         discoBall.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                Intent segueToMainActivity = new Intent(view.getContext(), MainActivity.class);
-                startActivity(segueToMainActivity);
+                Intent segueToOnboarding = new Intent(view.getContext(), profile1.class);
+                startActivity(segueToOnboarding);
                 overridePendingTransition(R.anim.right_in, R.anim.left_out);
             }
 

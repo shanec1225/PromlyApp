@@ -1,4 +1,4 @@
-package com.teamgamma.promlyapp;
+package com.teamgamma.promlyapp.onboarding;
 
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
@@ -23,6 +23,9 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.teamgamma.promlyapp.MainActivity;
+import com.teamgamma.promlyapp.R;
+
 import java.util.Calendar;
 
 
@@ -45,20 +48,15 @@ public class profile4 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.profile4);
 
-        // Controls functionality of back button, which page to return to
-        mBack = findViewById(R.id.backToProfile3Btn);
-        mBack.setOnClickListener(view -> {
-            // Switch MainActivity class for profile3 class name
-            Intent intent = new Intent(profile4.this, MainActivity.class);
-            startActivity(intent);
-        });
         // Controls functionality for the Let's Go button at the bottom
         mLetsGo = findViewById(R.id.buttonLetsGo);
         mLetsGo.setEnabled(false);
-        mLetsGo.setOnClickListener(view -> {
-            // Switch MainActivity class for next page class name
-            Intent intent = new Intent(profile4.this, MainActivity.class);
-            startActivity(intent);
+        mLetsGo.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view1) {
+                Intent segueToMainActivity = new Intent(view1.getContext(), MainActivity.class);
+                startActivity(segueToMainActivity);
+                overridePendingTransition(R.anim.right_in, R.anim.left_out);
+            };
         });
 
 

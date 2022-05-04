@@ -1,4 +1,4 @@
-package com.teamgamma.promlyapp;
+package com.teamgamma.promlyapp.authentication;
 
 import android.content.Intent;
 import android.os.Build;
@@ -8,6 +8,8 @@ import android.view.Gravity;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.teamgamma.promlyapp.R;
 
 public class LoginScreen extends AppCompatActivity {
     @Override

@@ -1,20 +1,17 @@
 
-package com.teamgamma.promlyapp;
+package com.teamgamma.promlyapp.onboarding;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.ActivityOptions;
 import android.content.Intent;
-import android.graphics.Color;
-import android.graphics.LinearGradient;
-import android.graphics.Shader;
 import android.os.Bundle;
-import android.text.TextPaint;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.ToggleButton;
+
+import com.teamgamma.promlyapp.R;
 
 public class profile1 extends AppCompatActivity
 {
@@ -39,6 +36,9 @@ public class profile1 extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.profile1);
+
+        Button next = findViewById(R.id.profile1_Next);
+        TextView skip = findViewById(R.id.profile1Skip);
 
         p1_Button1 = findViewById(R.id.p1_Button1);
         check1 = findViewById(R.id.check1);
@@ -69,6 +69,26 @@ public class profile1 extends AppCompatActivity
                 overridePendingTransition(R.anim.right_in, R.anim.left_out);
             };
         });
+
+        //Todo: Make disabled until options are selected
+        //Next button pressed
+        next.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view1) {
+                Intent segueToProfile2 = new Intent(view1.getContext(), profile2.class);
+                startActivity(segueToProfile2);
+                overridePendingTransition(R.anim.right_in, R.anim.left_out);
+            };
+        });
+
+        //Skip Button Pressed
+        skip.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view1) {
+                Intent skipToProfile2 = new Intent(view1.getContext(), profile2.class);
+                startActivity(skipToProfile2);
+                overridePendingTransition(R.anim.right_in, R.anim.left_out);
+            };
+        });
+
     }
         public void onToggleClicked(View view1) {
             // Is the toggle on?

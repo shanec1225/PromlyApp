@@ -1,9 +1,11 @@
-package com.teamgamma.promlyapp;
+package com.teamgamma.promlyapp.onboarding;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Button;
+
+import com.teamgamma.promlyapp.R;
 
 public class profile2 extends AppCompatActivity {
     Button mBack,mNext,mPlusButtonTop1,mPlusButtonTop2,mPlusButtonTop3,mPlusButtonTop4,mPlusButtonTop5,
@@ -16,21 +18,13 @@ public class profile2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.profile2);
 
-        // Controls functionality of back button, which page to return to
-        mBack = findViewById(R.id.backToProfile1Btn);
-        mBack.setOnClickListener(view -> {
-            // Switch MainActivity class for profile3 class name
-            Intent intent = new Intent(profile2.this, MainActivity.class);
-            startActivity(intent);
-        });
-
-
         // Controls functionality for the next button at the bottom
         mNext = findViewById(R.id.buttonNext);
         mNext.setOnClickListener(view -> {
-            // Switch MainActivity class for profile3 class name
-            Intent intent = new Intent(profile2.this, MainActivity.class);
-            startActivity(intent);
+            // Switch to profile 3
+            Intent segueToProfile3 = new Intent(view.getContext(), profile3.class);
+            startActivity(segueToProfile3);
+            overridePendingTransition(R.anim.right_in, R.anim.left_out);
         });
 
 
