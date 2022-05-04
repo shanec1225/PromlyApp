@@ -23,11 +23,6 @@
     <color name="tangerine_pill">#FA880C</color>
     <color name="coral_red_pill">#FF0A45</color>
     <color name="dark_blue_pill">#00008b</color>
-    <color name="purple_gradient_left_opaque">#33AA57FF</color>
-    <color name="opaque">#00000000</color>
-    <color name="light_blue">#04D4F9</color>
-    <color name="green">#0BE014</color>
-    <color name="yellow">#E5E301</color>
-    <color name="orange">#FA880C</color>
-    <color name="red">#FF0A45</color>
+
+    <color name="system_gray">#3A3A3C</color>
 </resources>
