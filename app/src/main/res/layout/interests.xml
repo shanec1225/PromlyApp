@@ -21,49 +21,24 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5"
-        tools:layout_editor_absoluteX="0dp">
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5">
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/saveEditedInterests"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
             android:text="@string/save"
             android:textColor="@color/purple_200"
             android:textSize="17sp"
+            android:fontFamily="@font/avenir_ltstd_book"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/interestsTitle"
-            android:textColor="@color/white"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/backToProfile1Btn"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/backToProfile1Btn"
-            android:layout_width="32dp"
-            android:layout_height="32dp"
-            android:layout_marginStart="16dp"
-            android:background="@drawable/ic_navicon"
-            android:clickable="true"
-            android:contentDescription="@string/back_button_to_profile_1"
-            android:focusable="true"
-            android:tint="@android:color/white"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:ignore="MissingConstraints,TouchTargetSizeCheck,RedundantDescriptionCheck"
-            tools:layout_editor_absoluteY="0dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -298,7 +273,8 @@
                             android:textColor="@color/white"
                             app:background="@drawable/rounded_button"
                             app:backgroundTint="@color/purple_gradient_left"
-                            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck"/>
+                            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck"
+                            android:theme="@style/Theme.MaterialComponents.Light"/>
 
                         <Space
                             android:layout_width="8dp"
@@ -320,7 +296,8 @@
                             app:backgroundTint="@color/opaque"
                             tools:ignore="TouchTargetSizeCheck"
                             app:strokeWidth="1dp"
-                            app:strokeColor="@color/purple_gradient_left"/>
+                            app:strokeColor="@color/purple_gradient_left"
+                            android:theme="@style/Theme.MaterialComponents.Light"/>
 
                         <Space
                             android:layout_width="8dp"
@@ -342,7 +319,8 @@
                             app:backgroundTint="@color/opaque"
                             tools:ignore="TouchTargetSizeCheck"
                             app:strokeWidth="1dp"
-                            app:strokeColor="@color/purple_gradient_left"/>
+                            app:strokeColor="@color/purple_gradient_left"
+                            android:theme="@style/Theme.MaterialComponents.Light"/>
 
                     </LinearLayout>
 
@@ -369,7 +347,8 @@
                             app:backgroundTint="@color/opaque"
                             tools:ignore="TouchTargetSizeCheck"
                             app:strokeWidth="1dp"
-                            app:strokeColor="@color/purple_gradient_left"/>
+                            app:strokeColor="@color/purple_gradient_left"
+                            android:theme="@style/Theme.MaterialComponents.Light"/>
 
                         <Space
                             android:layout_width="8dp"
@@ -391,7 +370,8 @@
                             app:backgroundTint="@color/opaque"
                             tools:ignore="TouchTargetSizeCheck"
                             app:strokeWidth="1dp"
-                            app:strokeColor="@color/purple_gradient_left" />
+                            app:strokeColor="@color/purple_gradient_left"
+                            android:theme="@style/Theme.MaterialComponents.Light"/>
 
                         <Space
                             android:layout_width="8dp"
@@ -413,7 +393,8 @@
                             app:backgroundTint="@color/opaque"
                             tools:ignore="TouchTargetSizeCheck"
                             app:strokeWidth="1dp"
-                            app:strokeColor="@color/purple_gradient_left" />
+                            app:strokeColor="@color/purple_gradient_left"
+                            android:theme="@style/Theme.MaterialComponents.Light"/>
 
                         </LinearLayout>
                     </LinearLayout>
@@ -904,6 +885,22 @@
             </TableLayout>
         </HorizontalScrollView>
     </ScrollView>
+
+    <TextView
+        android:id="@+id/interestsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="154dp"
+        android:layout_marginEnd="153dp"
+        android:layout_weight="1"
+        android:text="@string/interestsTitle"
+        android:fontFamily="@font/avenir_ltstd_black"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
